@@ -1,5 +1,44 @@
 body {
-  background-image: url('/images/planet(1).png');
-  background-position: center;
-  background-repeat: repeat;
+  background-image: url('../Images/planet(2).png');
+}
+
+
+/*------------------------------------------------------*/
+#bottom-left {
+  position: absolute;
+  width: 20%;
+  bottom: 40%;
+  left: 15%;
+}
+
+#paragraph-1 {
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 90px;
+  margin: 0 auto;
+  color: white;
+  width: 300px;
+}
+
+#paragraph-2 {
+  color: white;
+  font-size: 45px;
+}
+
+#left-line {
+  border-left: solid white;  /* added width and color values */
+  background-color: white;
+  border: none;
+  width: 50%;
+  height: 5px;
+  float: left;
+}
+
+#right-line {
+  border-right: solid white;  /* added width and color values */
+  background-color: white;
+  border: none;
+  width: 50%;
+  height: 5px;
+  float: right;
 }
