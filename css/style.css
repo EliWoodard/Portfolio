@@ -1,10 +1,11 @@
 body {
  background-image: linear-gradient(135.8deg, rgb(15, 15, 17) 27.1%, rgb(25, 0, 0) 77.5%);
  padding: 30px;
+ backface-visibility: hidden;
 }
 
 
-/*------------------------------------------------------*/
+/*-----------------------------------------------------*/
 .header {
   height: 95vh;
   background-image: url('../Images/planet(2).png');
@@ -40,16 +41,23 @@ body {
   margin: 0 auto;
   color: white;
   width: 80%;
+
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+
 }
 
 #paragraph-2 {
   text-align: center;
   color: white;
   font-size: 45px;
+
+  animation-name: moveInRight;
+  animation-duration: 1s;
 }
 
 #left-line {
-  border-left: solid white;  /* added width and color values */
+  border-left: solid white;
   background-color: white;
   border: none;
   width: 50%;
@@ -58,10 +66,44 @@ body {
 }
 
 #right-line {
-  border-right: solid white;  /* added width and color values */
+  border-right: solid white;
   background-color: white;
   border: none;
   width: 50%;
   height: 5px;
   float: right;
+}
+
+/*-----------------------------------------------------*/
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transition: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  80% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transition: translate(0);
+  }
 }
