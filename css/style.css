@@ -2,6 +2,7 @@ body {
  background-image: linear-gradient(135.8deg, rgb(15, 15, 17) 27.1%, rgb(25, 0, 0) 77.5%);
  padding: 30px;
  backface-visibility: hidden;
+ text-align: center;
 }
 
 
@@ -18,6 +19,61 @@ body {
 
 .logo {
   height: 64px;
+
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+}
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all.2s;
+  position: relative;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(255,255,255,.2);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+}
+
+.btn-white {
+  background-color: #fff;
+  color: #000;
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .4s;
+}
+
+.btn-white::after {
+  background-color: #fff;
+}
+
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.btn-animated {
+  animation: moveInBottom .5s ease-out 1s;
+  animation-fill-mode: backwards;
 }
 
 /*-----------------------------------------------------*/
@@ -63,6 +119,9 @@ body {
   width: 50%;
   height: 5px;
   float: left;
+
+  animation-name: moveInLeft;
+  animation-duration: 1s;
 }
 
 #right-line {
@@ -72,6 +131,9 @@ body {
   width: 50%;
   height: 5px;
   float: right;
+
+  animation-name: moveInRight;
+  animation-duration: 1s;
 }
 
 /*-----------------------------------------------------*/
@@ -105,5 +167,17 @@ body {
   100% {
     opacity: 1;
     transition: translate(0);
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    tranform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
   }
 }
