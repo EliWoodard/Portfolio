@@ -1,10 +1,27 @@
 body {
- background-image: linear-gradient(135.8deg, rgb(15, 15, 17) 27.1%, rgb(25, 0, 0) 77.5%);
+ background-image: linear-gradient(135.8deg, #1e1e1e 27.1%, #1a1a1a 77.5%);
  padding: 30px;
  backface-visibility: hidden;
  text-align: center;
+ color: #fff;
+ height: 2000px;
 }
 
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
 /*-----------------------------------------------------*/
 .header {
@@ -13,6 +30,7 @@ body {
   background-size: cover;
   background-position: top;
   position: relative;
+  margin-bottom: 20px;
 
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
@@ -74,6 +92,43 @@ body {
 .btn-animated {
   animation: moveInBottom .5s ease-out 1s;
   animation-fill-mode: backwards;
+}
+
+.navigation-bar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 3.6rem;
+  border-bottom: 1px solid #1a1a1a;
+  background-color: rgba(40, 40, 40, 0.95);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 4px rgb(0 0 0 / 30%);
+}
+
+.navigation_item {
+  text-decoration: none;
+  font-family: montserrat, sans-serif;
+  transition: all 0.3s;
+  margin-right: 10rem;
+  font-size: 1.3rem;
+  font-weight: 250;
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.navigation_item:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.navigation_item:last-child {
+  margin-right: 5rem;
+}
+
+.navigation_item:hover {
+  color: #e70000;
 }
 
 /*-----------------------------------------------------*/
