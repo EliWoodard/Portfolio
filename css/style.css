@@ -305,7 +305,8 @@ p {
 
 #about_text {
   font-size: 1.5rem;
-  width: 500px;
+  max-width: 500px;
+  width: 100%;
   line-height: 1.8;
 }
 
@@ -414,13 +415,5 @@ p {
 @media (max-width: 1300px) {
   #about_contents {
       flex-direction: column;
-  }
-}
-
-@media (max-width: 600px) {
-  #about_text {
-      width: 80%;
-      margin-left: auto;
-      margin-right: auto;
   }
 }
