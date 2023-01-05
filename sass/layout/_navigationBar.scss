@@ -1,0 +1,41 @@
+.navigation-bar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 3.6rem;
+  border-bottom: 1px solid $color-primary-black;
+  background-color: rgba($color-primary-light-gray, 0.95);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 4px rgba($color-primary-black, 0.3);
+  z-index: 999
+}
+
+.navigation_item {
+  text-decoration: none;
+  font-family: montserrat, sans-serif;
+  transition: all 0.3s;
+  margin-right: 10rem;
+  font-size: 1.3rem;
+  font-weight: 250;
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: $color-primary;
+
+  &:not(:last-child) {
+    margin-right: 2rem;
+  }
+
+  &:last-child {
+    margin-right: 5rem;
+  }
+
+  &:hover {
+    color: $color-primary-red;
+  }
+
+  &:active {
+    transform: translateY(-1px);
+  }
+}

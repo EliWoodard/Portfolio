@@ -1,0 +1,14 @@
+#about {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#about_contents {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}

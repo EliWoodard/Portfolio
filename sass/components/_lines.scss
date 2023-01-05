@@ -1,0 +1,30 @@
+#line_container {
+  width: auto;
+  height: 2.3vw;
+}
+
+#left-line {
+  border-left: solid $color-primary;
+  background-color: $color-primary;
+  border: none;
+  width: 50%;
+  margin-right: 50%;
+  height: .5vw;
+  float: left;
+
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+}
+
+#right-line {
+  border-right: solid $color-primary;
+  background-color: $color-primary;
+  border: none;
+  width: 50%;
+  margin-left: 50%;
+  height: .5vw;
+  float: right;
+
+  animation-name: moveInRight;
+  animation-duration: 1s;
+}

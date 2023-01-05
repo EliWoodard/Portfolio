@@ -1,0 +1,30 @@
+.header {
+  height: 95vh;
+  background-image: url('../Images/planet(2).png');
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  margin-bottom: 20px;
+
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+.logo {
+  height: 64px;
+
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+}
+
+#top-left {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+#bottom-left {
+  position: absolute;
+  width: 20%;
+  bottom: 40%;
+  left: 15%;
+}
