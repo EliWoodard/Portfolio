@@ -3,7 +3,8 @@ body {
 }
 
 .section_heading {
-  margin-top: 6rem;
+  margin-top: 1rem;
+  margin-bottom: 20rem;
   font-size: 4rem;
   font-family: montserrat, sans-serif;
 }
@@ -19,6 +20,12 @@ body {
   left: 1.5rem;
   top: 4.5rem;
   z-index: -1;
+}
+
+.info_blurb {
+  color: $color-primary-black;
+  font-size: 2rem;
+  line-height: 1.8;
 }
 
 #paragraph-1 {

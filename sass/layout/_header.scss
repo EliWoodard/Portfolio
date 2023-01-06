@@ -6,6 +6,7 @@
   position: relative;
   margin-bottom: 20px;
 
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 

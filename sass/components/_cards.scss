@@ -1,0 +1,129 @@
+.card {
+
+  // FUNCTIONALITY
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 50rem;
+
+  &_side {
+    height: 50rem;
+    transition: all 1s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba($color-primary, .15);
+
+    &_front {
+      background-color: $color-primary;
+    }
+
+    &_back {
+      background-color: $color-primary;
+      transform: rotateY(180deg);
+
+      &-1 {
+
+      }
+    }
+  }
+
+  &:hover &_side_front {
+    transform: rotateY(-180deg);
+  }
+
+  &:hover &_side_back {
+    transform: rotateY(0);
+  }
+
+  // FRONT SIDE STYLING
+  &_picture {
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+
+    &-1 {
+      background-image: linear-gradient(to right bottom, $color-primary-black, #200900),
+      url(../Images/placeHolder.jpg);
+    }
+
+    &-2 {
+      background-image: linear-gradient(to right bottom, $color-primary-black, #03702f),
+      url(../Images/placeHolder.jpg);
+    }
+
+    &-3 {
+      background-image: linear-gradient(to right bottom, $color-primary-black, $color-primary-black),
+      url(../Images/placeHolder.jpg);
+    }
+
+  }
+
+  &_heading {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: right;
+    color: $color-primary;
+    position: absolute;
+    top: 16rem;
+    right: 1rem;
+    width: 75%;
+  }
+
+  &_heading-span {
+    padding: .8rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+
+    &--1 {
+      background-image: linear-gradient(to right bottom,
+      rgba($color-primary-red, .65),
+      rgba(#200900, .65));
+    }
+
+    &--2 {
+      background-image: linear-gradient(to right bottom,
+      rgba(#2192FF, .65),
+      rgba(#38E54D, .65));
+    }
+
+    &--3 {
+      background-image: linear-gradient(to right bottom,
+      rgba($color-primary-black, .65),
+      rgba($color-primary-light-gray, .65));
+    }
+  }
+
+  &_details {
+    padding: 1rem;
+    color: $color-primary-black;
+
+    ul {
+      list-style: none;
+      display: block;
+      margin: 0 auto;
+      width: 80%;
+      padding: 0 0 0 0;
+
+      li {
+        padding: 0 0 0 0;
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem;
+
+        &:not(:last-child) {
+          border-bottom: 1px solid rgba($color-primary-light-gray, .55);
+        }
+      }
+    }
+  }
+}
+
+// BACK SIDE STYLING
