@@ -84,13 +84,14 @@ p {
 
 @media (max-width: 1300px) {
   #about_contents {
+    transition: all 1s ease;
     flex-direction: column; } }
 
 body {
   text-align: center; }
 
 .section_heading {
-  margin-top: 1rem;
+  margin-top: 3rem;
   margin-bottom: 20rem;
   font-size: 4rem;
   font-family: montserrat, sans-serif; }
@@ -287,7 +288,8 @@ body {
   border-radius: 10px;
   background-image: linear-gradient(#000, #000), radial-gradient(at top left, #fff, #e70000);
   background-origin: border-box;
-  background-clip: content-box, border-box; }
+  background-clip: content-box, border-box;
+  transition: all 1s ease; }
   .skills_item img {
     height: 60px;
     width: auto;
@@ -301,7 +303,8 @@ body {
 
 #skills {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  transition: width 0.3s, height 0.3s; }
 
 #line_container {
   width: auto;
@@ -341,6 +344,10 @@ body {
   display: flex;
   justify-content: space-between;
   width: 80%; }
+
+#projects {
+  top: 1000px;
+  padding: 1rem 0; }
 
 .row {
   max-width: 114rem;

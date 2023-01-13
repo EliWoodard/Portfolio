@@ -50,6 +50,7 @@
 
 @media (max-width: 1300px) {
   #about_contents {
+    transition: all 1s ease;
       flex-direction: column;
   }
 }
