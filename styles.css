@@ -263,9 +263,6 @@ body {
 .card_side_back-2 {
   background-image: linear-gradient(to right bottom, #000, #03702f), url(Images/placeHolder.jpg);
 }
-.card_side_back-3 {
-  background-image: linear-gradient(to right bottom, #000, #000), url(Images/placeHolder.jpg);
-}
 .card:hover .card_side_front {
   transform: rotateY(-180deg);
 }
