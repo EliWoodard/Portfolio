@@ -239,7 +239,7 @@ body {
 }
 .card_side {
   height: 50rem;
-  transition: all 1s ease;
+  transition: transform 1s cubic-bezier(0.86, 0, 0.07, 1);
   position: absolute;
   top: 0;
   left: 0;
@@ -256,6 +256,9 @@ body {
 .card_side_back {
   background-color: #fff;
   transform: rotateY(180deg);
+}
+.card_side_back-1 .card_picture-1 {
+  background-image: linear-gradient(to right bottom, #000, #200900), url(Images/playerSimulatorBright.jpg);
 }
 .card:hover .card_side_front {
   transform: rotateY(-180deg);

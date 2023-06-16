@@ -8,7 +8,7 @@
 
   &_side {
     height: 50rem;
-    transition: all 1s ease;
+    transition: transform 1s cubic-bezier(0.86, 0, 0.07, 1);
     position: absolute;
     top: 0;
     left: 0;
@@ -28,10 +28,13 @@
       transform: rotateY(180deg);
 
       &-1 {
-
+        .card_picture-1 {
+        background-image: linear-gradient(to right bottom, $color-primary-black, #200900),
+        url(Images/playerSimulatorBright.jpg);
       }
     }
   }
+}
 
   &:hover &_side_front {
     transform: rotateY(-180deg);
