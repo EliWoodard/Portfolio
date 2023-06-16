@@ -17,6 +17,7 @@
     border-radius: 3px;
     overflow: hidden;
     box-shadow: 0 1.5rem 4rem rgba($color-primary, .15);
+    will-change: transform, filter;
 
     &_front {
       background-color: $color-primary;
@@ -50,17 +51,17 @@
 
     &-1 {
       background-image: linear-gradient(to right bottom, $color-primary-black, #200900),
-      url(../Images/placeHolder.jpg);
+      url(Images/playerSimulatorWebsite.jpg);
     }
 
     &-2 {
       background-image: linear-gradient(to right bottom, $color-primary-black, #03702f),
-      url(../Images/placeHolder.jpg);
+      url(Images/placeHolder.jpg);
     }
 
     &-3 {
       background-image: linear-gradient(to right bottom, $color-primary-black, $color-primary-black),
-      url(../Images/placeHolder.jpg);
+      url(Images/placeHolder.jpg);
     }
 
   }
