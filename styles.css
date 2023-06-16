@@ -258,7 +258,7 @@ body {
   transform: rotateY(180deg);
 }
 .card_side_back-1 .card_picture-1 {
-  background-image: linear-gradient(to right bottom, #000, #200900), url(Images/playerSimulatorBright.jpg);
+  background-image: linear-gradient(to right bottom, #000, #200900), url(Images/playerSimulatorBright.JPG);
 }
 .card_side_back-2 {
   background-image: linear-gradient(to right bottom, #000, #03702f), url(Images/placeHolder.jpg);
@@ -280,7 +280,7 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 }
 .card_picture-1 {
-  background-image: linear-gradient(to right bottom, #000, #200900), url(Images/playerSimulatorWebsite.jpg);
+  background-image: linear-gradient(to right bottom, #000, #200900), url(Images/playerSimulatorWebsite.JPG);
 }
 .card_picture-2 {
   background-image: linear-gradient(to right bottom, #000, #03702f), url(Images/placeHolder.jpg);
