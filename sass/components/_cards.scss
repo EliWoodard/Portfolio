@@ -33,6 +33,16 @@
         url(Images/playerSimulatorBright.jpg);
       }
     }
+
+    &-2 {
+      background-image: linear-gradient(to right bottom, $color-primary-black, #03702f),
+      url(Images/placeHolder.jpg);
+    }
+
+    &-3 {
+      background-image: linear-gradient(to right bottom, $color-primary-black, $color-primary-black),
+      url(Images/placeHolder.jpg);
+    }
   }
 }
 

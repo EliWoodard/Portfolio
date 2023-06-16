@@ -260,6 +260,12 @@ body {
 .card_side_back-1 .card_picture-1 {
   background-image: linear-gradient(to right bottom, #000, #200900), url(Images/playerSimulatorBright.jpg);
 }
+.card_side_back-2 {
+  background-image: linear-gradient(to right bottom, #000, #03702f), url(Images/placeHolder.jpg);
+}
+.card_side_back-3 {
+  background-image: linear-gradient(to right bottom, #000, #000), url(Images/placeHolder.jpg);
+}
 .card:hover .card_side_front {
   transform: rotateY(-180deg);
 }
