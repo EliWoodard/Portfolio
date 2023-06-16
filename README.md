@@ -6,7 +6,7 @@ This repository contains the code for the portfolio website. As a Computer Scien
 
 The website is structured into different sections, including a header with a navigation bar, an 'About' section, and a 'Projects' section. It has a modern design with animations to improve user experience.
 
-![Portfolio Screenshot](Images\portfolioImage.JPG)
+![Portfolio Screenshot](./Images/portfolioImage.JPG)
 
 ## Technologies Used
 
