@@ -262,13 +262,13 @@ body {
   transform: rotateY(180deg);
 }
 .card_side_back-1 .card_picture-1 {
-  background-image: linear-gradient(to right bottom, #000, #200900), url(Images/playerSimulatorBright.JPG);
+  background-image: linear-gradient(to right bottom, #000, #200900), url("../Images/playerSimulatorBright.JPG");
 }
 .card_side_back-2 .card_picture-2 {
-  background-image: linear-gradient(to right bottom, #000, #03702f), url(Images/coursePhoto.png);
+  background-image: linear-gradient(to right bottom, #000, #03702f), url("../Images/coursePhoto.png");
 }
 .card_side_back-3 .card_picture-3 {
-  background-image: linear-gradient(to right bottom, #000, #03702f), url(Images/placeHolder.jpg);
+  background-image: linear-gradient(to right bottom, #000, #03702f), url("../Images/placeHolder.jpg");
 }
 .card:hover .card_side_front {
   transform: rotateY(-180deg);
@@ -284,13 +284,13 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 }
 .card_picture-1 {
-  background-image: linear-gradient(to right bottom, #000, #200900), url(Images/playerSimulatorWebsite.JPG);
+  background-image: linear-gradient(to right bottom, #000, #200900), url("../Images/playerSimulatorWebsite.JPG");
 }
 .card_picture-2 {
-  background-image: linear-gradient(to right bottom, #000, #03702f), url(Images/tasksPhoto.png);
+  background-image: linear-gradient(to right bottom, #000, #03702f), url("../Images/tasksPhoto.png");
 }
 .card_picture-3 {
-  background-image: linear-gradient(to right bottom, #000, #000), url(Images/placeHolder.jpg);
+  background-image: linear-gradient(to right bottom, #000, #000), url("../Images/placeHolder.jpg");
 }
 .card_heading {
   font-size: 2.8rem;
@@ -479,6 +479,13 @@ body {
   margin-bottom: 20px;
 }
 
+#video-overlay-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
 .video-background {
   position: absolute;
   top: 0;
@@ -487,6 +494,16 @@ body {
   height: 100%;
   overflow: hidden;
   z-index: -1;
+}
+
+#overlay-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1; /* to place it above the video */
 }
 
 .video-background video {

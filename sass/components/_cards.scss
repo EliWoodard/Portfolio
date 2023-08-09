@@ -30,21 +30,21 @@
       &-1 {
         .card_picture-1 {
           background-image: linear-gradient(to right bottom, $color-primary-black, #200900),
-            url(Images/playerSimulatorBright.JPG);
+            url('../Images/playerSimulatorBright.JPG');
         }
       }
 
       &-2 {
         .card_picture-2 {
           background-image: linear-gradient(to right bottom, $color-primary-black, #03702f),
-            url(Images/coursePhoto.png);
+            url('../Images/coursePhoto.png');
         }
       }
 
       &-3 {
         .card_picture-3 {
           background-image: linear-gradient(to right bottom, $color-primary-black, #03702f),
-            url(Images/placeHolder.jpg);
+            url('../Images/placeHolder.jpg');
         }
       }
     }
@@ -68,17 +68,17 @@
 
     &-1 {
       background-image: linear-gradient(to right bottom, $color-primary-black, #200900),
-        url(Images/playerSimulatorWebsite.JPG);
+      url('../Images/playerSimulatorWebsite.JPG');
     }
 
     &-2 {
       background-image: linear-gradient(to right bottom, $color-primary-black, #03702f),
-        url(Images/tasksPhoto.png);
+        url('../Images/tasksPhoto.png');
     }
 
     &-3 {
       background-image: linear-gradient(to right bottom, $color-primary-black, $color-primary-black),
-        url(Images/placeHolder.jpg);
+        url('../Images/placeHolder.jpg');
     }
 
   }
