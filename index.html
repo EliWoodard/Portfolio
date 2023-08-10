@@ -11,12 +11,18 @@
 <body>
   <header class="header">
     <div id="video-overlay-container">
-      <img src="Images/Overlay.png" id="overlay-image" class="video-background">
-      <div class="video-background">
-        <video id="myVideo" autoplay loop muted>
-            <source src="PortfolioVideo.mp4" type="video/mp4">
-        </video>
+      <div id="stars-container"></div>
+      <div id="planet-container"> <!-- Common container for video and circle -->
+        <div class="video-background">
+          <video id="myVideo" autoplay loop muted>
+              <source src="PortfolioVideo.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div id="circle-overlay-container">
+          <div id="circle-overlay"></div>
+        </div>
       </div>
+      <img src="Images/Overlay.png" id="overlay-image" class="video-background">
     </div>
     <div id="top-left">
       <img src="Images/Origami-Symbol.png" alt="Logo" class="logo">
@@ -31,6 +37,7 @@
       <a href="#about" class="btn btn-white btn-animated" id="move-down-button">Discover More</a>
     </div>
   </header>
+  
   <nav class="navigation-bar">
     <ul class="navigation">
       <li class="navigation_item">
