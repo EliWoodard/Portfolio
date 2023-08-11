@@ -124,7 +124,7 @@ body {
 
 .section_heading {
   margin-top: 3rem;
-  margin-bottom: 20rem;
+  margin-bottom: 5rem;
   font-size: 4rem;
   font-family: montserrat, sans-serif;
 }
@@ -434,6 +434,86 @@ body {
   padding: 1rem 0;
 }
 
+#conatct-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(51, 51, 51, 0);
+  color: #ccc;
+  padding: 20px;
+}
+
+.contact-text {
+  color: #fff;
+  text-align: left;
+  margin-bottom: 2%;
+  width: 520px;
+  font-size: 1.4rem;
+}
+
+.contact {
+  width: 500px;
+  height: 10%;
+  background-color: #444;
+  color: #ccc;
+  border: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  outline: none;
+}
+
+#Contact-Message {
+  width: 500px;
+  height: 8vh;
+  background-color: #444;
+  color: #ccc;
+  border: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  resize: none;
+  outline: none;
+}
+
+#Contact-Submit {
+  width: 8vw;
+  height: 3vh;
+  background-color: #555;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#submit-button {
+  width: 520px;
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#Contact-Submit:hover {
+  background-color: #777;
+}
+
+::-webkit-input-placeholder {
+  color: #ccc;
+}
+
+::-moz-placeholder {
+  color: #ccc;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #ccc;
+}
+
+:-moz-placeholder {
+  color: #ccc;
+  opacity: 1;
+}
+
 .row {
   max-width: 114rem;
   background-image: linear-gradient(135.8deg, #1e1e1e 27.1%, #1a1a1a 77.5%);
@@ -496,7 +576,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: 3;
+  z-index: 1;
 }
 
 .video-background video {
@@ -532,7 +612,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 2; /* Above the stars */
+  z-index: 1;
 }
 
 #circle-overlay-container {
@@ -568,7 +648,7 @@ body {
   width: 100%;
   height: 95vh;
   overflow: hidden;
-  z-index: 1; /* Behind the video and overlay */
+  z-index: 0;
 }
 
 .star {
