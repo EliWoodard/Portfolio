@@ -36,10 +36,10 @@
 }
 body {
   background-image: linear-gradient(135.8deg, #1e1e1e 27.1%, #1a1a1a 77.5%);
-  padding: 30px;
   backface-visibility: hidden;
   color: #fff;
   overflow-x: hidden;
+  margin: 0;
 }
 
 ul {
@@ -415,12 +415,13 @@ body {
 }
 
 #about {
-  width: 100%;
+  width: auto;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 30px 30px 30px;
 }
 
 #about_contents {
@@ -514,6 +515,66 @@ body {
   opacity: 1;
 }
 
+#footer {
+  background-color: #393939;
+  color: #fff;
+  position: relative;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  height: 10vh;
+}
+
+.up-button-wrapper {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.up-button {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) rotate(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  height: 40px;
+  width: 30px;
+  font-size: 3rem;
+  padding: 0;
+  margin: 0;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #ccc;
+}
+
+.arrow {
+  transform: rotate(90deg);
+  display: block;
+  margin: auto;
+}
+
+.github-link {
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.github-link:hover {
+  color: #ccc;
+}
+
+.name-year {
+  font-size: 1rem;
+  color: #fff;
+}
+
 .row {
   max-width: 114rem;
   background-image: linear-gradient(135.8deg, #1e1e1e 27.1%, #1a1a1a 77.5%);
@@ -557,7 +618,7 @@ body {
 .header {
   height: 95vh;
   position: relative;
-  margin-bottom: 20px;
+  margin: 30px;
 }
 
 #video-overlay-container {
@@ -679,6 +740,7 @@ body {
   backdrop-filter: blur(8px);
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
   z-index: 999;
+  margin: 0 30px 30px 30px;
 }
 
 .navigation_item {

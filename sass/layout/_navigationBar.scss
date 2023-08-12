@@ -9,7 +9,8 @@
   background-color: rgba($color-primary-light-gray, 0.95);
   backdrop-filter: blur(8px);
   box-shadow: 0 4px 4px rgba($color-primary-black, 0.3);
-  z-index: 999
+  z-index: 999;
+  margin: 0 30px 30px 30px;
 }
 
 .navigation_item {

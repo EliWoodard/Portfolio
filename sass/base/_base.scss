@@ -1,9 +1,9 @@
 body {
  background-image: linear-gradient(135.8deg, $color-primary-gray 27.1%, $color-primary-dark-gray 77.5%);
- padding: 30px;
  backface-visibility: hidden;
  color: $color-primary;
  overflow-x: hidden;
+ margin: 0;
 }
 
 ul {
