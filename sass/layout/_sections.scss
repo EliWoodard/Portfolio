@@ -110,41 +110,22 @@
   flex-direction: column-reverse;
   align-items: center;
   height: 10vh;
+  margin-top: 10%;
 }
 
-.up-button-wrapper {
-  position: absolute;
-  top: -20px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.up-button {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%) rotate(180deg);
+.up-arrows {
+  font-size: 24px;
+  color: #fff;
   display: flex;
-  align-items: center;
   justify-content: center;
-  border: none;
-  height: 40px;
-  width: 30px;
-  font-size: 3rem;
-  padding: 0;
-  margin: 0;
-  background: none;
-  outline: none;
-  cursor: pointer;
-  background-color: #ccc;
+  align-items: center;
+  position: absolute;
+  background: #e70000;
+  top: -5px;
+  width: 50px;
+  height: 30px;
+  transform: rotate(270deg);
 }
-
-.arrow {
-  transform: rotate(90deg);
-  display: block;
-  margin: auto;
-}
-
 
 .github-link {
   color: #fff;
