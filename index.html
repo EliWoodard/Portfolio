@@ -3,38 +3,22 @@
 
 <head>
   <link rel="stylesheet" href="css/styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
   <script src="javascript/script.js"></script>
   <meta charset="utf-8">
-  <title>Portfolio</title>
+  <title>Eli Woodard | Software Engineer Portfolio</title>
 </head>
 
 <body>
   <header class="header">
-    <div id="video-overlay-container">
-      <div id="stars-container"></div>
-      <div id="planet-container"> 
-        <div class="video-background">
-          <video id="myVideo" autoplay loop muted>
-              <source src="PortfolioVideo.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div id="circle-overlay-container">
-          <div id="circle-overlay"></div>
-        </div>
+    <div id="headerText">
+      <div id="headerTextLeft">Hello, I'm <span id="nameText">Eli</span>.</div>
+      <div id="headerTextRight">I'm a software engineer.</div>
+      <div id="headerButton">
+        <button id="viewButton">
+          <a href="#about">View my work</a>
+        </button>
       </div>
-      <img src="Images/Overlay.png" id="overlay-image" class="video-background">
-    </div>
-    <div id="top-left">
-      <img src="Images/Origami-Symbol.png" alt="Logo" class="logo">
-    </div>
-    <div id="bottom-left">
-      <h1 id="paragraph-1">CS Major</h1>
-      <div id="line_container">
-        <hr id="left-line">
-        <hr id="right-line">
-      </div>
-      <h2 id="paragraph-2">Software Engineer</h2>
-      <a href="#about" class="btn btn-white btn-animated" id="move-down-button">Discover More</a>
     </div>
   </header>
   
