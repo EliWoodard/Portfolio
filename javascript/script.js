@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
         document.querySelector("header").appendChild(renderer.domElement);
     
         // Load the Earth texture
-        const earthTexture = new THREE.TextureLoader().load("../Images/8kEarth.jpg");
+        const earthTexture = new THREE.TextureLoader().load("Images/8kEarth.jpg");
         earth = new THREE.Mesh(
             new THREE.SphereGeometry(5, 32, 32),
             new THREE.MeshStandardMaterial({ map: earthTexture })
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function() {
         scene.add(earth);
     
         // Load the cloud texture and create a slightly larger sphere for clouds
-        const cloudTexture = new THREE.TextureLoader().load('../Images/8kEarthClouds.jpg');
+        const cloudTexture = new THREE.TextureLoader().load('Images/8kEarthClouds.jpg');
         clouds = new THREE.Mesh(
             new THREE.SphereGeometry(5.1, 32, 32),
             new THREE.MeshStandardMaterial({ map: cloudTexture, transparent: true, opacity: 0.4 })
