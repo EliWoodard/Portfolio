@@ -93,9 +93,9 @@ document.addEventListener("DOMContentLoaded", function() {
     function animate() {
         requestAnimationFrame(animate);
     
-        earth.rotation.y -= 0.0003;
-        clouds.rotation.y -= 0.0005;
-        satellitesGroup.rotation.y += 0.0001;
+        earth.rotation.y -= 0.00006;
+        clouds.rotation.y -= 0.0001;
+        satellitesGroup.rotation.y -= 0.0002;
     
         satellites.forEach(satellite => {
             satellite.rotationData.theta += 0.0001;
