@@ -51,25 +51,5 @@ body {
   animation-duration: 1s;
 }
 
-#profile_info {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-weight: 250;
-}
 
-#avatar_icon {
-  height: 20rem;
-  margin-bottom: 4rem;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
 
-#about_text {
-  font-size: 1.5rem;
-  max-width: 500px;
-  width: 100%;
-  line-height: 1.8;
-}

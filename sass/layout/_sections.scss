@@ -1,3 +1,4 @@
+// About
 #about {
   width: auto;
   margin-left: auto;
@@ -10,13 +11,67 @@
 
 #about_contents {
   display: flex;
+  width: 95%;
+  align-items: center;
   justify-content: space-between;
-  width: 80%;
+}
+
+#portfolio_info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  font-weight: 250;
+  transition: all 1.1s;
+}
+
+#avatar_icon {
+  width: 200px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#about_text {
+  font-size: 1.3rem;
+  max-width: 500px;
+  width: 100%;
+  height: 45%;
+  line-height: 1.8;
+  text-align: left;
 }
 
 #projects {
   top: 1000px;
-  padding: 1rem 0; }
+  padding: 1rem 0; 
+}
+
+@media (max-width: 1500px) {
+  #about_text {
+    font-size: 1.8rem;
+  }
+}
+
+
+@media (max-width: 1300px) {
+
+  #avatar_icon {
+    margin-bottom: 5%;
+  }
+}
+
+@media (max-width: 600px) {
+  #about_text {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #avatar_icon {
+    width: 100px;
+  }
+}
 
 // Contact
 #conatct-section {

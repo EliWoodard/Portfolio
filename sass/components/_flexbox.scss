@@ -37,7 +37,7 @@
 }
 
 .logo_name {
-  font-size: 1vw;
+  font-size: 1.2rem;
   font-family: montserrat, sans-serif;
 }
 
@@ -45,4 +45,77 @@
   display: flex;
   justify-content: center;
   transition: width 0.3s, height 0.3s;
+}
+
+@media (max-width: 1500px) {
+  .skills_item {
+    height: 90px;
+    width: 145px;
+  }
+
+  .skills_item img {
+    height: 55px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .skills_item {
+    border-width: 2px;
+  }
+
+  .logo-name {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .skills_item {
+    height: 80px;
+    width: 130px;
+  }
+
+  .skills_item img {
+    height: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .skills_item {
+    height: 70px;
+    width: 115px;
+  }
+
+  .skills_item img {
+    height: 45px;
+  }
+}
+@media (max-width: 500px) {
+  .skills_item {
+    height: 60px;
+    width: 100px;
+  }
+
+  .skills_item img {
+    height: 40px;
+  }
+}
+@media (max-width: 400px) {
+  .skills_item {
+    height: 50px;
+    width: 80px;
+  }
+
+  .skills_item img {
+    height: 35px;
+  }
+}
+@media (max-width: 350px) {
+  .skills_item {
+    height: 30px;
+    width: 70px;
+  }
+
+  .skills_item img {
+    height: 20px;
+  }
 }
