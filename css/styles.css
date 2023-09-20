@@ -343,7 +343,7 @@ body {
   border-image-slice: 1;
   border-width: 3px;
   border-radius: 10px;
-  background-image: linear-gradient(#000, #000), radial-gradient(at top left, #fff, #e70000);
+  background-image: linear-gradient(#000, #000), radial-gradient(at top left, #ababab, #e70000);
   background-origin: border-box;
   background-clip: content-box, border-box;
   transition: all 1s ease;
@@ -460,20 +460,18 @@ body {
 }
 
 #about {
-  width: auto;
+  width: 1300px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 30px 30px 30px;
 }
 
 #about_contents {
   display: flex;
-  width: 95%;
-  align-items: center;
   justify-content: space-between;
+  width: 100%;
 }
 
 #portfolio_info {
@@ -491,6 +489,7 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  margin-bottom: 5%;
 }
 
 #about_text {
@@ -511,10 +510,13 @@ body {
   #about_text {
     font-size: 1.8rem;
   }
+  #about {
+    width: 1100px;
+  }
 }
-@media (max-width: 1300px) {
-  #avatar_icon {
-    margin-bottom: 5%;
+@media (max-width: 1200px) {
+  #about {
+    width: auto;
   }
 }
 @media (max-width: 600px) {

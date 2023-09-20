@@ -20,7 +20,7 @@
   border-image-slice: 1;
   border-width: 3px;
   border-radius: 10px;
-  background-image: linear-gradient($color-primary-black, $color-primary-black), radial-gradient(at top left, $color-primary, $color-primary-red);
+  background-image: linear-gradient($color-primary-black, $color-primary-black), radial-gradient(at top left, #ababab, $color-primary-red);
   background-origin: border-box;
   background-clip: content-box, border-box;
   transition: all 1s ease;
