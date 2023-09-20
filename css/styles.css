@@ -529,6 +529,43 @@ body {
     width: 100px;
   }
 }
+#education_heading {
+  margin-top: 300px;
+}
+
+#education_blurb {
+  display: flex;
+  flex-direction: row;
+  width: 85%;
+  margin: 0 7.5% 0 7.5%;
+}
+
+#BSU_Logo {
+  height: 100px;
+  width: 100px;
+  margin-right: 2.5%;
+}
+
+#education_blurb_text_container {
+  display: flex;
+  flex-direction: column;
+}
+
+#school_text {
+  font-size: 1.2rem;
+  color: white;
+  margin-bottom: 0;
+}
+
+#specialization_text {
+  font-size: 1rem;
+  color: #9d9b9b;
+}
+
+#education_container {
+  display: flex;
+}
+
 #conatct-section {
   display: flex;
   flex-direction: column;
