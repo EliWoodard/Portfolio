@@ -78,7 +78,7 @@
 
 // Education
 #education {
-  width: 80%;
+  width: 1300px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 300px;
@@ -87,16 +87,12 @@
   align-items: center;
 }
 
-#education_heading {
-
-}
-
 #education_blurb {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  width: 85%;
-  margin: 0 0 10% 0;
+  justify-content: flex-start;
+  width: 1180px;
+  margin-bottom: 100px;
 }
 
 #BSU_Logo {
@@ -122,6 +118,16 @@
   color: #9d9b9b;
 }
 
+#course_highlight_text_container {
+  display: flex;
+  width: 1180px;
+}
+
+#course_highlight_text {
+  font-size: 1.8rem;
+  color: white;
+}
+
 #education_container {
   display: flex;
   flex-wrap: wrap;
@@ -142,11 +148,13 @@
 }
 
 .course_highlight_box {
-  width: 300px;
-  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 1300px;
+  height: 150px;
   background-color: rgb(27, 27, 27);
   aspect-ratio: 1/1;
-  border-radius: 5%;
   margin: 0 60px 100px 60px;
   position: relative;
 }
@@ -175,18 +183,16 @@
 .course_title {
   color: white;
   font-size: 1.5rem;
-  margin-top: 5px;
-  margin-bottom: 50px;
-}
-
-.course_title_extended {
-  color: white;
-  font-size: 1.5rem;
-  margin-top: 5px;
-  margin-bottom: 22px;
+  margin: 5px 0 10px 10px;
 }
 
 .course_description {
+  font-size: 1rem;
+  text-align: start;
+  margin: 0 10px 20px 10px;
+}
+
+.course_links {
   font-size: 1rem;
   text-align: start;
   margin: 0 10px 20px 10px;
