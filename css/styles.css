@@ -572,6 +572,15 @@ body {
   color: #9d9b9b;
 }
 
+#date_to_date_text {
+  font-size: 2rem;
+  margin-left: 470px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #course_highlight_text_container {
   display: flex;
   width: 1180px;
