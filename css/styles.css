@@ -531,6 +531,12 @@ body {
     width: 100px;
   }
 }
+#education, #education_blurb, #school_info_box, #BSU_Logo, #education_blurb_text_container,
+#school_text, #specialization_text, #date_to_date_text, #course_highlight_text_container,
+#course_highlight_text, #education_container {
+  transition: all 0.5s ease;
+}
+
 #education {
   width: 1300px;
   margin-left: auto;
@@ -544,9 +550,16 @@ body {
 #education_blurb {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
+  align-items: center;
   width: 1180px;
   margin-bottom: 100px;
+}
+
+#school_info_box {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
 }
 
 #BSU_Logo {
@@ -574,7 +587,6 @@ body {
 
 #date_to_date_text {
   font-size: 2rem;
-  margin-left: 470px;
   position: relative;
   display: flex;
   align-items: center;
@@ -641,7 +653,7 @@ body {
 
 .course_title {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   margin: 5px 0 10px 10px;
 }
 
@@ -657,6 +669,81 @@ body {
   margin: 0 10px 20px 10px;
 }
 
+@media (max-width: 1500px) {
+  #educaiton {
+    width: 1100px;
+  }
+  #BSU_Logo {
+    height: 100px;
+    width: 100px;
+  }
+  #course_highlight_text {
+    font-size: 2rem;
+  }
+  #course_highlight_text_container {
+    width: 980px;
+  }
+  .course_highlight_box {
+    width: 980px;
+    height: 100px;
+    margin: 0 60px 80px 60px;
+  }
+  #education_blurb {
+    width: 980px;
+    margin-bottom: 80px;
+  }
+  #school_text {
+    font-size: 1.5rem;
+  }
+  #specialization_text {
+    font-size: 1.4rem;
+  }
+  #date_to_date_text {
+    font-size: 2.5rem;
+  }
+  .course_title {
+    font-size: 1.4rem;
+  }
+  .course_description {
+    font-size: 1.2rem;
+  }
+  .course_links {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 1200px) {
+  #education {
+    width: auto;
+    min-width: 220px;
+  }
+  #education_blurb {
+    width: 82%;
+    min-width: 220px;
+    flex-wrap: wrap;
+  }
+  #course_highlight_text_container {
+    width: 82%;
+    min-width: 220px;
+  }
+  #education_container {
+    width: 82%;
+    min-width: 220px;
+  }
+  .course_highlight_box {
+    min-width: 220px;
+    height: 100px;
+    margin: 0 0 80px 0;
+  }
+  .course_title {
+    font-size: 1.4rem;
+  }
+  .course_description {
+    font-size: 1.2rem;
+  }
+  .course_links {
+    font-size: 1.2rem;
+  }
+}
 #career {
   width: 80%;
   margin-left: auto;
