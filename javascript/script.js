@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const header = document.querySelector("header");
     const headerWidth = header.clientWidth;
     const headerHeight = header.clientHeight;
+    const steps = Math.floor((1920 - headerWidth) / 10);
 
     function init() {
         // Create the scene
@@ -16,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
         // Create the camera
         camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
         camera.position.y = 3; // 3
-        camera.position.x = -8; // -8
+        camera.position.x = -8 - (-1 * steps/32);
         camera.position.z = 7; // 7
     
         // Create the renderer
@@ -120,11 +121,19 @@ document.addEventListener("DOMContentLoaded", function() {
     function onWindowResize() {
         const headerWidth = header.clientWidth;
         const headerHeight = header.clientHeight;
-        
+    
+        // Adjust aspect ratio
         camera.aspect = headerWidth / headerHeight;
         camera.updateProjectionMatrix();
+    
         renderer.setSize(headerWidth, headerHeight);
+    
+        const steps = Math.floor((1920 - headerWidth) / 10);
+
+        // Adjust camera's x position based on steps
+        camera.position.x = -8 - (-1 * steps/32);
     }
+    
     
     init();    
 });
