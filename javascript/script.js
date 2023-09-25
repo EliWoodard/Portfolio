@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
         // Create the camera
         camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
         camera.position.y = 3; // 3
-        camera.position.x = -8 - (-1 * steps/32);
+        camera.position.x = -8 - (-1 * steps/32); // Moves camera to match width of website
         camera.position.z = 7; // 7
     
         // Create the renderer
