@@ -459,6 +459,19 @@ body {
   animation-duration: 1s;
 }
 
+.particles-wrapper {
+  position: relative;
+}
+
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Ensure particles sit behind the actual content */
+}
+
 #about {
   width: 1300px;
   margin-left: auto;
@@ -909,7 +922,7 @@ body {
 
 .row {
   max-width: 114rem;
-  background-image: linear-gradient(135.8deg, #1e1e1e 27.1%, #1a1a1a 77.5%);
+  background: transparent;
   text-align: left;
   height: 55rem;
   margin: 0 auto;

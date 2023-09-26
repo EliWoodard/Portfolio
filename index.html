@@ -5,6 +5,9 @@
   <link rel="stylesheet" href="css/styles.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
   <script src="javascript/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="javascript/particles.js" defer></script>
+
   <meta charset="utf-8">
   <title>Eli Woodard | Software Engineer Portfolio</title>
 </head>
@@ -45,258 +48,263 @@
       </li>
     </ul>
   </nav>
-  <section id='about'>
-    <h2 class="about_heading section_heading">About</h2>
-    <div id="about_contents">
-      <div id="portfolio_info">
-        <img src="Images/PersonalImage.jpg" alt="" id="avatar_icon">
-        <p id="about_text">
-          Hello! I'm Eli, an HPC Student Intern at BSU and an undergraduate pursing computer science. 
-          My academic journey has equipped me with strong communication and organizational skills, essential for any project. 
-          I'm passionate about computer science and eager to contribute to technology research.
-        </p>
-      </div>
-      <div id="skills">
-        <div class="skills_row">
-          <div class="skills_item">
-            <img src="Images/HTML-logo.png" alt="">
-            <div class="logo_name">HTML</div>
-          </div>
-          <div class="skills_item">
-            <img src="Images/CSS-logo.png" alt="">
-            <div class="logo_name">CSS</div>
-          </div>
-          <div class="skills_item">
-            <img src="Images/Javascript-logo.png" alt="">
-            <div class="logo_name">Javascript</div>
-          </div>
+  <div class="particles-wrapper">
+    <div id="particles-js" class="content-container"></div>
+    <section id='about'>
+      <h2 class="about_heading section_heading">About</h2>
+      <div id="about_contents">
+        <div id="portfolio_info">
+          <img src="Images/PersonalImage.jpg" alt="" id="avatar_icon">
+          <p id="about_text">
+            Hello! I'm Eli, an HPC Student Intern at BSU and an undergraduate pursing computer science. 
+            My academic journey has equipped me with strong communication and organizational skills, essential for any project. 
+            I'm passionate about computer science and eager to contribute to technology research.
+          </p>
         </div>
-        <div class="skills_row">
-          <div class="skills_item">
-            <img src="Images/Java-logo.png" alt="">
-            <div class="logo_name">Java</div>
-          </div>
-          <div class="skills_item">
-            <img src="Images/Python-logo.png" alt="">
-            <div class="logo_name">Python</div>
-          </div>
-          <div class="skills_item">
-            <img src="Images/C-logo.png" alt="">
-            <div class="logo_name">C</div>
-          </div>
-          <div class="skills_item">
-            <img src="Images/Bash-logo.png" alt="">
-            <div class="logo_name">Bash</div>
-          </div>
-        </div>
-        <div class="skills_row">
-          <div class="skills_item">
-            <img src="Images/SQL-logo.png" alt="">
-            <div class="logo_name">SQL</div>
-          </div>
-          <div class="skills_item">
-            <img src="Images/Git-logo.png" alt="">
-            <div class="logo_name">Git</div>
-          </div>
-          <div class="skills_item">
-            <img src="Images/SASS-logo.png" alt="">
-            <div class="logo_name">SASS</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id='education'>
-    <h2 id="education_heading" class="about_heading section_heading">Education</h2>
-    <div id="education_blurb">
-      <div id="school_info_box">
-        <img id="BSU_Logo" src="Images/BSU_Logo.png" alt="BSU_Logo"> <!--Maybe add a border that glows around the BSU Logo Image-->
-        <div id="education_blurb_text_container">
-          <p id="school_text">Boise State University</p>
-          <p id="specialization_text">Junior in Computer Science | GPA 3.9</p>
-        </div>
-      </div>
-      <p id="date_to_date_text">August 2021 - Present</p>
-    </div>
-    <div id="course_highlight_text_container">
-      <p id="course_highlight_text">Course Highlights</p>
-    </div>
-    <div id="education_container">
-      <div class="course_highlight_box">
-        <li class="course_title">Data Structures</li>
-        <li class="course_description">Description: Effects present letters inquiry no an removed or friends. Desire behind latter me though in. 
-          Supposing shameless am he engrossed up additions. My possible peculiar together to. Desire so better am cannot he up before points. 
-          Remember mistaken opinions it pleasure of debating. Court front maids forty if aware their at. Chicken use are pressed removed.
-        </li>
-        <li class="course_links">Links</li>
-      </div>
-      <div class="course_highlight_box">
-        <li class="course_title">Programming Languages</li>
-        <li class="course_description">Description: Effects present letters inquiry no an removed or friends. Desire behind latter me though in. 
-          Supposing shameless am he engrossed up additions. My possible peculiar together to. Desire so better am cannot he up before points. 
-          Remember mistaken opinions it pleasure of debating. Court front maids forty if aware their at. Chicken use are pressed removed.
-        </li>
-        <li class="course_links">Links</li>
-      </div>
-      <div class="course_highlight_box">
-        <li class="course_title">Computational Theory</li>
-        <li class="course_description">Description: Effects present letters inquiry no an removed or friends. Desire behind latter me though in. 
-          Supposing shameless am he engrossed up additions. My possible peculiar together to. Desire so better am cannot he up before points. 
-          Remember mistaken opinions it pleasure of debating. Court front maids forty if aware their at. Chicken use are pressed removed.
-        </li>
-        <li class="course_links">Links</li>
-      </div>
-      <div class="course_highlight_box">
-        <li class="course_title">Algorithms</li>
-        <li class="course_description">Description: Effects present letters inquiry no an removed or friends. Desire behind latter me though in. 
-          Supposing shameless am he engrossed up additions. My possible peculiar together to. Desire so better am cannot he up before points. 
-          Remember mistaken opinions it pleasure of debating. Court front maids forty if aware their at. Chicken use are pressed removed.
-        </li>
-        <li class="course_links">Links</li>
-      </div>
-      <div class="course_highlight_box">
-        <li class="course_title">Electronics and Communication</li>
-        <li class="course_description">Description: Effects present letters inquiry no an removed or friends. Desire behind latter me though in. 
-          Supposing shameless am he engrossed up additions. My possible peculiar together to. Desire so better am cannot he up before points. 
-          Remember mistaken opinions it pleasure of debating. Court front maids forty if aware their at. Chicken use are pressed removed.
-        </li>
-        <li class="course_links">Links</li>
-      </div>
-      <div class="course_highlight_box">
-        <li class="course_title">Computer Networks</li>
-        <li class="course_description">Description: Effects present letters inquiry no an removed or friends. Desire behind latter me though in. 
-          Supposing shameless am he engrossed up additions. My possible peculiar together to. Desire so better am cannot he up before points. 
-          Remember mistaken opinions it pleasure of debating. Court front maids forty if aware their at. Chicken use are pressed removed.
-        </li>
-        <li class="course_links">Links</li>
-      </div>
-    </div>  <!--We will put the 6 squares representing each course highlight here-->
-  </section>
-  <section id='career'>
-    <h2 class="about_heading section_heading">Career</h2>
-
-  </section> <!--Add a picture left and right button that lets you see the full project and change how they look to maybe be simialr to the educaito boxs-->
-  <section id="projects">
-    <h2 class="about_heading section_heading">Projects</h2>
-    <div class="row">
-      <div class="col-1-of-3">
-        <div class="card">
-          <div class="card_side card_side_front">
-            <div class="card_picture card_picture-1">
-              &nbsp;
+        <div id="skills">
+          <div class="skills_row">
+            <div class="skills_item">
+              <img src="Images/HTML-logo.png" alt="">
+              <div class="logo_name">HTML</div>
             </div>
-            <h4 class="card_heading">
-              <span class="card_heading-span card_heading-span--1">Player Sim.</span>
-            </h4>
-            <div class="card_details">
-              <p class="info_blurb">
-                Journey to Middle Earth required a deck of cards, and to ensure playability while online, I constructed a
-                simulator. This project showcases extensive HTML, CSS, SASS, and Javascript skills.
-              </p>
+            <div class="skills_item">
+              <img src="Images/CSS-logo.png" alt="">
+              <div class="logo_name">CSS</div>
+            </div>
+            <div class="skills_item">
+              <img src="Images/Javascript-logo.png" alt="">
+              <div class="logo_name">Javascript</div>
             </div>
           </div>
-          <div class="card_side card_side_back card_side_back-1">
-            <div class="card_picture card_picture-1">
-              &nbsp;
+          <div class="skills_row">
+            <div class="skills_item">
+              <img src="Images/Java-logo.png" alt="">
+              <div class="logo_name">Java</div>
             </div>
-            <h4 class="card_heading">
-              <span class="card_heading-span card_heading-span--1">Info</span>
-            </h4>
-            <div class="card_details">
-              <ul>
-                <li>Completed - 6/14/2023</li>
-                <li>Utilized - HTML, CSS, Javascript</li>
-                <li>Tools - VSCode and Github</li>
-                <li><a class="githubLink" href="https://github.com/EliWoodard/JourneyToMiddleEarth">Github link</a> </li>
-                <li> <a class="githubLink" href="https://eliwoodard.github.io/JourneyToMiddleEarth/">Page link</a> </li>
-              </ul>
+            <div class="skills_item">
+              <img src="Images/Python-logo.png" alt="">
+              <div class="logo_name">Python</div>
+            </div>
+            <div class="skills_item">
+              <img src="Images/C-logo.png" alt="">
+              <div class="logo_name">C</div>
+            </div>
+            <div class="skills_item">
+              <img src="Images/Bash-logo.png" alt="">
+              <div class="logo_name">Bash</div>
+            </div>
+          </div>
+          <div class="skills_row">
+            <div class="skills_item">
+              <img src="Images/SQL-logo.png" alt="">
+              <div class="logo_name">SQL</div>
+            </div>
+            <div class="skills_item">
+              <img src="Images/Git-logo.png" alt="">
+              <div class="logo_name">Git</div>
+            </div>
+            <div class="skills_item">
+              <img src="Images/SASS-logo.png" alt="">
+              <div class="logo_name">SASS</div>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-1-of-3">
-        <div class="card">
-          <div class="card_side card_side_front">
-            <div class="card_picture card_picture-2">
-              &nbsp;
-            </div>
-            <h4 class="card_heading">
-              <span class="card_heading-span card_heading-span--2">Tasks</span>
-            </h4>
-            <div class="card_details">
-              <p class="info_blurb">
-                Tasks is a work-in-progress website that is meant to be a simplified version of a task organizer. 
-              </p>
-            </div>
+    </section>
+    <section id='education'>
+      <h2 id="education_heading" class="about_heading section_heading">Education</h2>
+      <div id="education_blurb">
+        <div id="school_info_box">
+          <img id="BSU_Logo" src="Images/BSU_Logo.png" alt="BSU_Logo"> <!--Maybe add a border that glows around the BSU Logo Image-->
+          <div id="education_blurb_text_container">
+            <p id="school_text">Boise State University</p>
+            <p id="specialization_text">Junior in Computer Science | GPA 3.9</p>
           </div>
-          <div class="card_side card_side_back card_side_back-2">
-            <div class="card_picture card_picture-2">
+        </div>
+        <p id="date_to_date_text">August 2021 - Present</p>
+      </div>
+      <div id="course_highlight_text_container">
+        <p id="course_highlight_text">Course Highlights</p>
+      </div>
+      <div id="education_container">
+        <div class="course_highlight_box">
+          <li class="course_title">Data Structures</li>
+          <li class="course_description">Description: Effects present letters inquiry no an removed or friends. Desire behind latter me though in. 
+            Supposing shameless am he engrossed up additions. My possible peculiar together to. Desire so better am cannot he up before points. 
+            Remember mistaken opinions it pleasure of debating. Court front maids forty if aware their at. Chicken use are pressed removed.
+          </li>
+          <li class="course_links">Links</li>
+        </div>
+        <div class="course_highlight_box">
+          <li class="course_title">Programming Languages</li>
+          <li class="course_description">Description: Effects present letters inquiry no an removed or friends. Desire behind latter me though in. 
+            Supposing shameless am he engrossed up additions. My possible peculiar together to. Desire so better am cannot he up before points. 
+            Remember mistaken opinions it pleasure of debating. Court front maids forty if aware their at. Chicken use are pressed removed.
+          </li>
+          <li class="course_links">Links</li>
+        </div>
+        <div class="course_highlight_box">
+          <li class="course_title">Computational Theory</li>
+          <li class="course_description">Description: Effects present letters inquiry no an removed or friends. Desire behind latter me though in. 
+            Supposing shameless am he engrossed up additions. My possible peculiar together to. Desire so better am cannot he up before points. 
+            Remember mistaken opinions it pleasure of debating. Court front maids forty if aware their at. Chicken use are pressed removed.
+          </li>
+          <li class="course_links">Links</li>
+        </div>
+        <div class="course_highlight_box">
+          <li class="course_title">Algorithms</li>
+          <li class="course_description">Description: Effects present letters inquiry no an removed or friends. Desire behind latter me though in. 
+            Supposing shameless am he engrossed up additions. My possible peculiar together to. Desire so better am cannot he up before points. 
+            Remember mistaken opinions it pleasure of debating. Court front maids forty if aware their at. Chicken use are pressed removed.
+          </li>
+          <li class="course_links">Links</li>
+        </div>
+        <div class="course_highlight_box">
+          <li class="course_title">Electronics and Communication</li>
+          <li class="course_description">Description: Effects present letters inquiry no an removed or friends. Desire behind latter me though in. 
+            Supposing shameless am he engrossed up additions. My possible peculiar together to. Desire so better am cannot he up before points. 
+            Remember mistaken opinions it pleasure of debating. Court front maids forty if aware their at. Chicken use are pressed removed.
+          </li>
+          <li class="course_links">Links</li>
+        </div>
+        <div class="course_highlight_box">
+          <li class="course_title">Computer Networks</li>
+          <li class="course_description">Description: Effects present letters inquiry no an removed or friends. Desire behind latter me though in. 
+            Supposing shameless am he engrossed up additions. My possible peculiar together to. Desire so better am cannot he up before points. 
+            Remember mistaken opinions it pleasure of debating. Court front maids forty if aware their at. Chicken use are pressed removed.
+          </li>
+          <li class="course_links">Links</li>
+        </div>
+      </div>  <!--We will put the 6 squares representing each course highlight here-->
+    </section>
+    <section id='career'>
+      <h2 class="about_heading section_heading">Career</h2>
+  
+    </section> <!--Add a picture left and right button that lets you see the full project and change how they look to maybe be simialr to the educaito boxs-->
+    <section id="projects">
+      <h2 class="about_heading section_heading">Projects</h2>
+      <div class="row">
+        <div class="col-1-of-3">
+          <div class="card">
+            <div class="card_side card_side_front">
+              <div class="card_picture card_picture-1">
                 &nbsp;
+              </div>
+              <h4 class="card_heading">
+                <span class="card_heading-span card_heading-span--1">Player Sim.</span>
+              </h4>
+              <div class="card_details">
+                <p class="info_blurb">
+                  Journey to Middle Earth required a deck of cards, and to ensure playability while online, I constructed a
+                  simulator. This project showcases extensive HTML, CSS, SASS, and Javascript skills.
+                </p>
+              </div>
             </div>
-            <h4 class="card_heading">
-                <span class="card_heading-span card_heading-span--2">Info</span>
-            </h4>
-            <div class="card_details">
+            <div class="card_side card_side_back card_side_back-1">
+              <div class="card_picture card_picture-1">
+                &nbsp;
+              </div>
+              <h4 class="card_heading">
+                <span class="card_heading-span card_heading-span--1">Info</span>
+              </h4>
+              <div class="card_details">
                 <ul>
-                    <li>In progress</li>
-                    <li>Utilized - HTML, CSS, Javascript</li>
-                    <li>Tools - VSCode, Atom, and Github</li>
-                    <li><a class="githubLink" href="https://github.com/EliWoodard/Tasks">Github link</a> </li>
-                    <li> <a class="githubLink" href="https://eliwoodard.github.io/Tasks/">Page link</a> </li>
+                  <li>Completed - 6/14/2023</li>
+                  <li>Utilized - HTML, CSS, Javascript</li>
+                  <li>Tools - VSCode and Github</li>
+                  <li><a class="githubLink" href="https://github.com/EliWoodard/JourneyToMiddleEarth">Github link</a> </li>
+                  <li> <a class="githubLink" href="https://eliwoodard.github.io/JourneyToMiddleEarth/">Page link</a> </li>
                 </ul>
-            </div>
-        </div>
-        </div>
-      </div>
-      <div class="col-1-of-3">
-        <div class="card">
-          <div class="card_side card_side_front">
-            <div class="card_picture card_picture-3">
-              &nbsp;
-            </div>
-            <h4 class="card_heading">
-              <span class="card_heading-span card_heading-span--3">Image Con.</span>
-            </h4>
-            <div class="card_details">
-              <p class="info_blurb">
-                Image converter has been used for image control for any project that needs multiple images that looked similar. 
-              </p>
-            </div>
-          </div>
-          <div class="card_side card_side_back card_side_back-3">
-            <div class="card_picture card_picture-3">
-              &nbsp;
-            </div>
-            <h4 class="card_heading">
-              <span class="card_heading-span card_heading-span--3">Info</span>
-            </h4>
-            <div class="card_details">
-              <ul>
-                <li>Completed - 6/5/2023</li>
-                <li>Utilized - Java</li>
-                <li>Tools - VSCode</li>
-                <li><a class="githubLink" href="https://github.com/EliWoodard/Image-Converter">Github link</a> </li>
-              </ul>
+              </div>
             </div>
           </div>
         </div>
+        <div class="col-1-of-3">
+          <div class="card">
+            <div class="card_side card_side_front">
+              <div class="card_picture card_picture-2">
+                &nbsp;
+              </div>
+              <h4 class="card_heading">
+                <span class="card_heading-span card_heading-span--2">Tasks</span>
+              </h4>
+              <div class="card_details">
+                <p class="info_blurb">
+                  Tasks is a work-in-progress website that is meant to be a simplified version of a task organizer. 
+                </p>
+              </div>
+            </div>
+            <div class="card_side card_side_back card_side_back-2">
+              <div class="card_picture card_picture-2">
+                  &nbsp;
+              </div>
+              <h4 class="card_heading">
+                  <span class="card_heading-span card_heading-span--2">Info</span>
+              </h4>
+              <div class="card_details">
+                  <ul>
+                      <li>In progress</li>
+                      <li>Utilized - HTML, CSS, Javascript</li>
+                      <li>Tools - VSCode, Atom, and Github</li>
+                      <li><a class="githubLink" href="https://github.com/EliWoodard/Tasks">Github link</a> </li>
+                      <li> <a class="githubLink" href="https://eliwoodard.github.io/Tasks/">Page link</a> </li>
+                  </ul>
+              </div>
+          </div>
+          </div>
+        </div>
+        <div class="col-1-of-3">
+          <div class="card">
+            <div class="card_side card_side_front">
+              <div class="card_picture card_picture-3">
+                &nbsp;
+              </div>
+              <h4 class="card_heading">
+                <span class="card_heading-span card_heading-span--3">Image Con.</span>
+              </h4>
+              <div class="card_details">
+                <p class="info_blurb">
+                  Image converter has been used for image control for any project that needs multiple images that looked similar. 
+                </p>
+              </div>
+            </div>
+            <div class="card_side card_side_back card_side_back-3">
+              <div class="card_picture card_picture-3">
+                &nbsp;
+              </div>
+              <h4 class="card_heading">
+                <span class="card_heading-span card_heading-span--3">Info</span>
+              </h4>
+              <div class="card_details">
+                <ul>
+                  <li>Completed - 6/5/2023</li>
+                  <li>Utilized - Java</li>
+                  <li>Tools - VSCode</li>
+                  <li><a class="githubLink" href="https://github.com/EliWoodard/Image-Converter">Github link</a> </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
-  <section id="contact">
-    <h2 class="about_heading section_heading">Contact</h2>
-    <div id="conatct-section">
-      <p class="contact-text">
-        Have any questions or suggestions? Leave some details and I'll get back to you as soon as possible.
-      </p>
-      <input class="contact" id="Contact-Name" placeholder="Name">
-      <input class="contact" id="Contact-Email" placeholder="Email">
-      <textarea id="Contact-Message" placeholder="Message"></textarea>
-      <div id="submit-button">
-        <button id="Contact-Submit">Submit</button>
+    </section>
+    <section id="contact">
+      <h2 class="about_heading section_heading">Contact</h2>
+      <div id="conatct-section">
+        <p class="contact-text">
+          Have any questions or suggestions? Leave some details and I'll get back to you as soon as possible.
+        </p>
+        <input class="contact" id="Contact-Name" placeholder="Name">
+        <input class="contact" id="Contact-Email" placeholder="Email">
+        <textarea id="Contact-Message" placeholder="Message"></textarea>
+        <div id="submit-button">
+          <button id="Contact-Submit">Submit</button>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
+ 
+
   <div id="footer">
     <div id="GithubBox">
       <a href="https://github.com/EliWoodard" class="github-link">
