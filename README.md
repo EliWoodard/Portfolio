@@ -11,9 +11,11 @@ The website is structured into different sections, including a header with a nav
 ## Technologies Used
 
 - HTML5
-- CSS3
+- CSS
 - JavaScript
-- SASS (optional)
+- SASS
+- Three.js
+- particles.js
 
 3. Open `index.html` in your web browser.
 
