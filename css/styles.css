@@ -509,10 +509,11 @@ body {
 #about_text {
   font-size: 1.3rem;
   max-width: 500px;
-  width: 100%;
   height: 45%;
   line-height: 1.8;
   text-align: left;
+  margin: 0 30px 30px 30px;
+  min-width: 220px;
 }
 
 #projects {
@@ -535,11 +536,6 @@ body {
   }
 }
 @media (max-width: 600px) {
-  #about_text {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
   #avatar_icon {
     width: 100px;
   }
@@ -964,11 +960,13 @@ body {
   height: 95vh;
   position: relative;
   margin: 30px;
+  min-width: 220px;
 }
 
 #headerText {
   position: absolute;
   height: 100%;
+  min-width: 220px;
   left: 50%;
   transform: translateX(-50%);
   color: #9d9b9b;
@@ -1071,6 +1069,7 @@ body {
   justify-content: flex-end;
   align-items: center;
   height: 3.6rem;
+  min-width: 220px;
   border-bottom: 1px solid #000;
   background-color: rgba(51, 51, 51, 0.95);
   backdrop-filter: blur(8px);
@@ -1103,6 +1102,45 @@ body {
   transform: translateY(-1px);
 }
 
+@media (max-width: 500px) {
+  .navigation-bar {
+    justify-content: center;
+  }
+  .navigation {
+    width: 100%;
+  }
+  .navigation_item:not(:last-child) {
+    margin-right: 1rem;
+  }
+}
+@media (max-width: 430px) {
+  .navigation-bar {
+    justify-content: center;
+  }
+  .navigation {
+    width: 100%;
+  }
+  .navigation_item {
+    font-size: 1rem;
+  }
+  .navigation_item:not(:last-child) {
+    margin-right: 0.5rem;
+  }
+}
+@media (max-width: 350px) {
+  .navigation-bar {
+    justify-content: center;
+  }
+  .navigation {
+    width: 100%;
+  }
+  .navigation_item {
+    font-size: 0.6rem;
+  }
+  .navigation_item:not(:last-child) {
+    margin-right: 0.3rem;
+  }
+}
 .section_tours {
   padding: 25rem 0;
 }
