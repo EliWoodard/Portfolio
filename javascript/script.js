@@ -15,10 +15,10 @@ document.addEventListener("DOMContentLoaded", function() {
         scene = new THREE.Scene();
     
         // Create the camera
-        camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        camera = new THREE.PerspectiveCamera(30, window.innerWidth / window.innerHeight, 0.1, 1000);
         camera.position.y = 3; // 3
-        camera.position.x = -8 - (-1 * steps/32); // Moves camera to match width of website
-        camera.position.z = 7; // 7
+        camera.position.x = -6 - (-1 * steps/68); // Moves camera to match width of website
+        camera.position.z = 10; // 7
     
         // Create the renderer
         renderer = new THREE.WebGLRenderer({ antialias: true });
@@ -33,6 +33,8 @@ document.addEventListener("DOMContentLoaded", function() {
             new THREE.SphereGeometry(5, 32, 32),
             new THREE.MeshStandardMaterial({ map: earthTexture })
         );
+
+        earth.rotation.y = THREE.MathUtils.degToRad(-35);
         scene.add(earth);
     
         // Load the cloud texture and create a slightly larger sphere for clouds
@@ -41,6 +43,8 @@ document.addEventListener("DOMContentLoaded", function() {
             new THREE.SphereGeometry(5.1, 32, 32),
             new THREE.MeshStandardMaterial({ map: cloudTexture, transparent: true, opacity: 0.4 })
         );
+
+        clouds.rotation.y = THREE.MathUtils.degToRad(-50);
         scene.add(clouds);
 
         // Add satellites
@@ -131,7 +135,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const steps = Math.floor((1920 - headerWidth) / 10);
 
         // Adjust camera's x position based on steps
-        camera.position.x = -8 - (-1 * steps/32);
+        camera.position.x = -6 - (-1 * steps/68); 
     }
     
     
