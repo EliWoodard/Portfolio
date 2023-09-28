@@ -36,11 +36,17 @@
 
   &:hover {
     color: $color-primary-red;
+    transform: translateY(-1px);
   }
 
   &:active {
-    transform: translateY(-1px);
+    transform: translateY(1px);
   }
+}
+
+.navigation_item a.active-section {
+  transition: all 0.3s;
+  color: $color-primary-red;
 }
 
 @media (max-width: 600px) {
