@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
         // Create the camera
         camera = new THREE.PerspectiveCamera(30, window.innerWidth / window.innerHeight, 0.1, 1000);
         camera.position.y = 3; // 3
-        camera.position.x = -8 - (-1 * steps/68); // Moves camera to match width of website
+        camera.position.x = -8 - (-1 * steps/50); // Moves camera to match width of website
         camera.position.z = 16; // 7
     
         // Create the renderer
@@ -135,7 +135,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const steps = Math.floor((1920 - headerWidth) / 10);
 
         // Adjust camera's x position based on steps
-        camera.position.x = -8 - (-1 * steps/68);; 
+        camera.position.x = -8 - (-1 * steps/50);; 
     }
     
     
