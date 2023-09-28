@@ -169,14 +169,12 @@
   align-items: flex-start;
   width: 1300px;
   height: 150px;
-  background-color: rgb(27, 27, 27);
+  background-color: #1c1c1c;
   aspect-ratio: 1/1;
   margin: 0 60px 100px 60px;
   position: relative;
-}
-
-.course_highlight_box::after {
-  filter: blur(1rem);
+  box-shadow: 0px 0px 5px 1px #ccc;
+  transition: all 0.3s ease;
 }
 
 .course_highlight_box::before,
@@ -187,13 +185,32 @@
   z-index: -1;
   background: conic-gradient(
     from var(--gradient-angle),
-    rgb(43, 45, 185),
-    rgb(60, 63, 253),
-    rgb(21, 18, 184),
-    rgb(43, 45, 185),
-    rgb(60, 63, 253));
+    rgb(71, 71, 71),
+    rgb(204, 204, 204),
+    rgb(133, 133, 133),
+    rgb(204, 204, 204),
+    rgb(71, 71, 71)
+  );
   border-radius: inherit;
-  animation: rotation 10s linear infinite;
+  animation: rotation 10s infinite;
+  opacity: 0;  /* Set default opacity */
+  transition: opacity 0.6s ease;  /* Transition only opacity */
+}
+
+.course_highlight_box::after {
+  opacity: 0;
+  filter: blur(1rem);
+}
+
+
+.course_highlight_box:hover::after {
+  opacity: 1;
+  filter: blur(1rem);
+}
+
+.course_highlight_box:hover::before,
+.course_highlight_box:hover::after {
+  opacity: 1;  /* Set opacity on hover */
 }
 
 .course_title {

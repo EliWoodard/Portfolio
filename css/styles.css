@@ -35,7 +35,7 @@
   }
 }
 body {
-  background-image: linear-gradient(135.8deg, #1e1e1e 27.1%, #1a1a1a 77.5%);
+  background-color: #1c1c1c;
   backface-visibility: hidden;
   color: #fff;
   overflow-x: hidden;
@@ -639,14 +639,12 @@ body {
   align-items: flex-start;
   width: 1300px;
   height: 150px;
-  background-color: rgb(27, 27, 27);
+  background-color: #1c1c1c;
   aspect-ratio: 1/1;
   margin: 0 60px 100px 60px;
   position: relative;
-}
-
-.course_highlight_box::after {
-  filter: blur(1rem);
+  box-shadow: 0px 0px 5px 1px #ccc;
+  transition: all 0.3s ease;
 }
 
 .course_highlight_box::before,
@@ -655,9 +653,26 @@ body {
   position: absolute;
   inset: -0.1rem;
   z-index: -1;
-  background: conic-gradient(from var(--gradient-angle), rgb(43, 45, 185), rgb(60, 63, 253), rgb(21, 18, 184), rgb(43, 45, 185), rgb(60, 63, 253));
+  background: conic-gradient(from var(--gradient-angle), rgb(71, 71, 71), rgb(204, 204, 204), rgb(133, 133, 133), rgb(204, 204, 204), rgb(71, 71, 71));
   border-radius: inherit;
-  animation: rotation 10s linear infinite;
+  animation: rotation 10s infinite;
+  opacity: 0; /* Set default opacity */
+  transition: opacity 0.6s ease; /* Transition only opacity */
+}
+
+.course_highlight_box::after {
+  opacity: 0;
+  filter: blur(1rem);
+}
+
+.course_highlight_box:hover::after {
+  opacity: 1;
+  filter: blur(1rem);
+}
+
+.course_highlight_box:hover::before,
+.course_highlight_box:hover::after {
+  opacity: 1; /* Set opacity on hover */
 }
 
 .course_title {
@@ -678,6 +693,48 @@ body {
   margin: 0 10px 20px 10px;
 }
 
+@media (max-width: 1500px) {
+  #education {
+    width: 1100px;
+  }
+  #BSU_Logo {
+    height: 100px;
+    width: 100px;
+  }
+  #course_highlight_text {
+    font-size: 2rem;
+  }
+  #course_highlight_text_container {
+    width: 980px;
+  }
+  .course_highlight_box {
+    width: 980px;
+    height: 100px;
+    margin: 0 60px 80px 60px;
+  }
+  #education_blurb {
+    width: 980px;
+    margin-bottom: 80px;
+  }
+  #school_text {
+    font-size: 1.5rem;
+  }
+  #specialization_text {
+    font-size: 1.4rem;
+  }
+  #date_to_date_text {
+    font-size: 2.5rem;
+  }
+  .course_title {
+    font-size: 1.4rem;
+  }
+  .course_description {
+    font-size: 1.2rem;
+  }
+  .course_links {
+    font-size: 1.2rem;
+  }
+}
 @media (max-width: 1200px) {
   #education {
     width: auto;
