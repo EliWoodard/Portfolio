@@ -47,6 +47,11 @@
   transition: width 0.3s, height 0.3s;
 }
 
+.skills_item:hover {
+  box-shadow: 1px 1px 5px 1px rgb(192, 123, 123);
+  animation: pulse 3s infinite;
+}
+
 @media (max-width: 1500px) {
   .skills_item {
     height: 90px;
