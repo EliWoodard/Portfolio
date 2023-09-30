@@ -52,11 +52,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
         // Add satellites
         if(headerWidth > 900) {
-            NUM_SATELLITES = 20;  // number of satellites in each band
-            NUM_BANDS = 20;       // number of bands around the Earth
+            NUM_SATELLITES = 20; 
+            NUM_BANDS = 20;      
         } else {
-            NUM_SATELLITES = 0;  // number of satellites in each band
-            NUM_BANDS = 0;       // number of bands around the Earth
+            NUM_SATELLITES = 0;  
+            NUM_BANDS = 0;       
         }
 
         const INCLINATIONS = Array.from({ length: NUM_BANDS }, (_, idx) => (Math.PI * idx / (NUM_BANDS - 1)));

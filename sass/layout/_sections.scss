@@ -328,13 +328,91 @@
 
 // Career
 #career {
-  width: 80%;
+  width: 1300px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+#career_container {
+  display: flex;
+  justify-content: space-around; 
+  width: 100%;
+}
+
+@property --gradient-size {
+  syntax: "<percentage>";
+  initial-value: 0%;
+  inherits: false;
+}
+
+@keyframes radiating {
+  0%, 100% { 
+    --gradient-size: 0%;
+    opacity: 0;
+  }
+  50% {
+    --gradient-size: 200%; /* Covering more than 100% ensures that the square will be fully displayed */
+    opacity: 1;
+  }
+}
+
+#career_images {
+  display: flex;
+  position: relative;
+}
+
+#career_images::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;  
+  height: 100%;  
+  transform: translate(-50%, -50%); /* To center the element */
+  background: radial-gradient(
+    circle at center,
+    rgba(255, 255, 255, 0.925) var(--gradient-size),
+    rgba(255, 255, 255, 0.774) var(--gradient-size)
+  );
+  background-size: 50% 50%; /* Initial size of the gradient (it will grow with the animation) */
+  background-position: center;
+  z-index: -1; /* Put the gradient behind the images */
+  animation: radiating 6s infinite; /* Adjust the timing if needed */
+}
+
+#career_images_column {
+  display: flex;
+  flex-direction: column;
+}
+
+#left_career_image {
+  width: 220px;
+  height: 352px;
+  object-fit: cover;
+  object-position: 50% 0;
+  margin-right: 2px;
+}
+
+.right_career_image {
+  height: 175px;
+  width: 220px;
+  object-fit: cover;
+  object-position: 50% 0;
+}
+
+.right_career_image:first-child{
+  margin-bottom: 2px;
+}
+
+#career_text {
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+  width: 600px;
 }
 
 // Contact
