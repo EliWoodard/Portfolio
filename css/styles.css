@@ -908,6 +908,28 @@ body {
     align-items: center;
   }
 }
+@media (max-width: 550px) {
+  #career_images {
+    display: flex;
+    position: relative;
+    width: 80%;
+    min-width: 220px;
+    height: 262px;
+  }
+  #left_career_image {
+    width: 50%;
+    height: 262px;
+  }
+  .right_career_image {
+    width: 100%;
+  }
+  #career_text {
+    font-size: 1.8rem;
+    margin-top: 20px;
+    min-width: 220px;
+    width: 80%;
+  }
+}
 #conatct-section {
   display: flex;
   flex-direction: column;
