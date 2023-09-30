@@ -1,6 +1,9 @@
 document.addEventListener("DOMContentLoaded", function() {
     let scene, camera, renderer, earth, clouds, satellites = [], satellitesGroup;
 
+    var NUM_SATELLITES = 0;  // number of satellites in each band
+    var NUM_BANDS = 0;       // number of bands around the Earth
+
     const COLORS = [0x000000, 0xffffff];  // Blank and White
     const BLINK_INTERVAL = 1000;         // Blink every second
     const DISTANCE = 6; 
@@ -48,8 +51,14 @@ document.addEventListener("DOMContentLoaded", function() {
         scene.add(clouds);
 
         // Add satellites
-        const NUM_SATELLITES = 20;  // number of satellites in each band
-        const NUM_BANDS = 20;       // number of bands around the Earth
+        if(headerWidth > 900) {
+            NUM_SATELLITES = 20;  // number of satellites in each band
+            NUM_BANDS = 20;       // number of bands around the Earth
+        } else {
+            NUM_SATELLITES = 0;  // number of satellites in each band
+            NUM_BANDS = 0;       // number of bands around the Earth
+        }
+
         const INCLINATIONS = Array.from({ length: NUM_BANDS }, (_, idx) => (Math.PI * idx / (NUM_BANDS - 1)));
         const TOTAL_SATELLITES = NUM_SATELLITES * INCLINATIONS.length;
 
