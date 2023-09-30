@@ -424,11 +424,12 @@
     display: flex;
     position: relative;
     width: 400px;
+    height: 302px;
   }
 
   #left_career_image {
     width: 200px;
-    height: 300px;
+    height: 302px;
   }
   
   .right_career_image {
@@ -437,9 +438,7 @@
   }
 
   #career_text {
-    display: flex;
-    justify-content: flex-start;
-    text-align: left;
+    font-size: 2rem;
     width: 500px;
   }
 }
@@ -453,16 +452,23 @@
     display: flex;
     position: relative;
     width: 360px;
+    height: 262px;
   }
 
   #left_career_image {
     width: 180px;
-    height: 260px;
+    height: 262px;
   }
   
   .right_career_image {
     height: 130px;
     width: 180px;
+  }
+
+  #career_text {
+    font-size: 2rem;
+    margin-top: 20px;
+    width: 450px;
   }
 
   #career_container {
