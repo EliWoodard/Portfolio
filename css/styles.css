@@ -855,6 +855,22 @@ body {
   width: 600px;
 }
 
+@media (max-width: 1500px) {
+  #career {
+    width: 1100px;
+  }
+}
+@media (max-width: 1200px) {
+  #career {
+    width: auto;
+  }
+  #career_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+  }
+}
 #conatct-section {
   display: flex;
   flex-direction: column;
