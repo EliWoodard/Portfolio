@@ -568,6 +568,40 @@
   background-color: #777; 
 }
 
+@media (max-width: 550px) {
+  .contact-text {
+    width: 80%;
+    min-width: 220px;
+    padding: 10px;
+  }
+
+  #Contact-Name {
+    width: 80%;
+    min-width: 220px;
+  }
+
+  #Contact-Email {
+    width: 80%;
+    min-width: 220px;
+  }
+
+  #Contact-Message {
+    width: 80%;
+    min-width: 220px;
+  }
+
+  #Contact-Submit {
+    width: 25%;
+    height: 3vh;
+  }
+
+  #submit-button {
+    width: 80%;
+    min-width: 220px;
+    padding: 10px;
+  }
+}
+
 ::-webkit-input-placeholder {
   color: #ccc;
 }
