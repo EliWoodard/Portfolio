@@ -545,8 +545,8 @@ body {
     width: 100px;
   }
 }
-#education, #education_blurb, #school_info_box, #BSU_Logo, #education_blurb_text_container,
-#school_text, #specialization_text, #date_to_date_text, #course_highlight_text_container,
+#education, .education_blurb, .school_info_box, #BSU_Logo, .education_blurb_text_container,
+.school_text, .specialization_text, .date_to_date_text, #course_highlight_text_container,
 #course_highlight_text, #education_container {
   transition: all 0.5s ease;
 }
@@ -561,7 +561,7 @@ body {
   align-items: center;
 }
 
-#education_blurb {
+.education_blurb {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -570,7 +570,7 @@ body {
   margin-bottom: 100px;
 }
 
-#school_info_box {
+.school_info_box {
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -582,24 +582,24 @@ body {
   margin-right: 2.5%;
 }
 
-#education_blurb_text_container {
+.education_blurb_text_container {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-#school_text {
+.school_text {
   font-size: 1.2rem;
   color: white;
   margin-bottom: 0;
 }
 
-#specialization_text {
+.specialization_text {
   font-size: 1rem;
   color: #9d9b9b;
 }
 
-#date_to_date_text {
+.date_to_date_text {
   font-size: 2rem;
   position: relative;
   display: flex;
@@ -717,17 +717,17 @@ body {
     height: 100px;
     margin: 0 60px 80px 60px;
   }
-  #education_blurb {
+  .education_blurb {
     width: 980px;
     margin-bottom: 80px;
   }
-  #school_text {
+  .school_text {
     font-size: 1.5rem;
   }
-  #specialization_text {
+  .specialization_text {
     font-size: 1.4rem;
   }
-  #date_to_date_text {
+  .date_to_date_text {
     font-size: 2.5rem;
   }
   .course_title {
@@ -745,7 +745,7 @@ body {
     width: auto;
     min-width: 220px;
   }
-  #education_blurb {
+  .education_blurb {
     width: 82%;
     min-width: 220px;
     flex-wrap: wrap;
@@ -781,6 +781,18 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+#career_blurb_label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  color: #fff;
+  font-size: 4rem;
+  font-family: math;
 }
 
 #career_container {
@@ -857,6 +869,7 @@ body {
 #career_text {
   display: flex;
   justify-content: flex-start;
+  align-items: center;
   text-align: left;
   z-index: 2;
   width: 600px;
