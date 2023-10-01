@@ -881,6 +881,21 @@ body {
   #career {
     width: auto;
   }
+  #middle_career_image {
+    top: 160px;
+    width: 300px;
+  }
+  #left_career_image {
+    width: 255px;
+    height: 185px;
+    left: -47px;
+  }
+  #right_career_image {
+    width: 250px;
+    height: 175px;
+    right: -30px;
+    top: 35px;
+  }
   #career_images {
     display: flex;
     position: relative;
