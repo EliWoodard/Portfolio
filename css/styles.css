@@ -152,6 +152,7 @@ body {
   color: #000;
   font-size: 2rem;
   line-height: 1.8;
+  font-family: fangsong;
 }
 
 #paragraph-1 {
@@ -821,6 +822,7 @@ body {
   object-fit: cover;
   width: 320px;
   object-position: 50% 0;
+  border: 1px solid #fff;
   box-shadow: 12px 12px 20px 6px rgba(149, 149, 149, 0.1);
   z-index: 3;
   transition: transform 0.3s;
@@ -836,6 +838,7 @@ body {
   left: -35px;
   width: 300px;
   height: 220px;
+  border: 1px solid #fff;
   box-shadow: 12px 12px 20px 6px rgba(149, 149, 149, 0.1);
   z-index: 1;
   object-fit: cover;
@@ -854,6 +857,7 @@ body {
   top: 40px;
   width: 320px;
   height: 225px;
+  border: 1px solid #fff;
   box-shadow: 12px 12px 20px 6px rgba(149, 149, 149, 0.1);
   z-index: 2;
   object-fit: cover;
@@ -948,7 +952,7 @@ body {
   #career_images {
     display: flex;
     position: relative;
-    width: 80%;
+    width: 400px;
     min-width: 220px;
     height: 262px;
     margin-bottom: 140px;
@@ -1029,6 +1033,7 @@ body {
 #Contact-Submit {
   width: 8vw;
   height: 3vh;
+  min-height: 20px;
   background-color: #555;
   color: #fff;
   border: none;
@@ -1052,7 +1057,7 @@ body {
   .contact-text {
     width: 80%;
     min-width: 220px;
-    padding: 10px;
+    padding: 10px 20px 10px 0;
   }
   #Contact-Name {
     width: 80%;
@@ -1073,7 +1078,7 @@ body {
   #submit-button {
     width: 80%;
     min-width: 220px;
-    padding: 10px;
+    padding: 10px 0 10px 20px;
   }
 }
 ::-webkit-input-placeholder {
