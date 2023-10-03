@@ -347,7 +347,8 @@ body {
   background-image: linear-gradient(#000, #000), radial-gradient(at top left, #ababab, #e70000);
   background-origin: border-box;
   background-clip: content-box, border-box;
-  transition: all 1s ease;
+  transition: box-shadow 0.3s ease;
+  will-change: box-shadow, transform;
 }
 .skills_item img {
   height: 60px;
@@ -366,12 +367,11 @@ body {
 #skills {
   display: flex;
   justify-content: center;
-  transition: width 0.3s, height 0.3s;
+  transition: width 0.3s ease, height 0.3s ease, box-shadow 0.3s ease;
 }
 
 .skills_item:hover {
-  box-shadow: 1px 1px 5px 1px rgb(192, 123, 123);
-  animation: pulse 3s infinite;
+  box-shadow: 2px 2px 5px 1px rgb(192, 123, 123);
 }
 
 @media (max-width: 1500px) {
@@ -1269,7 +1269,7 @@ body {
     margin: 0 30px 30px 30px;
   }
   .info_blurb {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
   .card_details ul li {
     font-size: 2rem;

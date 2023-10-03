@@ -23,7 +23,8 @@
   background-image: linear-gradient($color-primary-black, $color-primary-black), radial-gradient(at top left, #ababab, $color-primary-red);
   background-origin: border-box;
   background-clip: content-box, border-box;
-  transition: all 1s ease;
+  transition: box-shadow 0.3s ease; 
+  will-change: box-shadow, transform;
 
   & img {
       height: 60px;
@@ -44,12 +45,11 @@
 #skills {
   display: flex;
   justify-content: center;
-  transition: width 0.3s, height 0.3s;
+  transition: width 0.3s ease, height 0.3s ease, box-shadow 0.3s ease; 
 }
 
 .skills_item:hover {
-  box-shadow: 1px 1px 5px 1px rgb(192, 123, 123);
-  animation: pulse 3s infinite;
+  box-shadow: 2px 2px 5px 1px rgb(192, 123, 123);
 }
 
 @media (max-width: 1500px) {
