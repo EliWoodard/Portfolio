@@ -19,10 +19,6 @@ The website is structured into different sections, including a header with a nav
 
 3. Open `index.html` in your web browser.
 
-## License
-
-This project is licensed under the MIT License.
-
 ## Contact
 
 - Eli Woodard: [Github](https://github.com/EliWoodard)
