@@ -4,7 +4,7 @@
 
 This repository contains the code for the portfolio website. As a Computer Science major and an aspiring Software Engineer, I've created this website to showcase his projects, skills, and experiences.
 
-The website is structured into different sections, including a header with a navigation bar, an 'About' section, and a 'Projects' section. It has a modern design with animations to improve user experience.
+The website is structured into different sections, including a header with a navigation bar, an 'About' section, Education, Career, and a 'Projects' section. It has a modern design with animations to improve user experience.
 
 ![Portfolio Screenshot](./Images/portfolioImage.JPG)
 
@@ -18,10 +18,6 @@ The website is structured into different sections, including a header with a nav
 - particles.js
 
 3. Open `index.html` in your web browser.
-
-## License
-
-This project is licensed under the MIT License.
 
 ## Contact
 
