@@ -326,6 +326,13 @@
   }
 }
 
+@media (max-width: 410px) {
+  .course_description {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+  }
+}
+
 // Career
 #career {
   width: 1300px;

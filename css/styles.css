@@ -774,6 +774,12 @@ body {
     font-size: 1.2rem;
   }
 }
+@media (max-width: 410px) {
+  .course_description {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+}
 #career {
   width: 1300px;
   margin-left: auto;
