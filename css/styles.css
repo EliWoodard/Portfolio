@@ -250,10 +250,11 @@ body {
   background-image: linear-gradient(to right bottom, #000, #200900), url("../Images/playerSimulatorBright.JPG");
 }
 .card_side_back-2 .card_picture-2 {
-  background-image: linear-gradient(to right bottom, #000, #03702f), url("../Images/coursePhoto.png");
+  background-image: linear-gradient(to right bottom, #000, #03702f), url("../Images/TasksImageCourses.png");
 }
 .card_side_back-3 .card_picture-3 {
   background-image: linear-gradient(to right bottom, #000, #03702f), url("../Images/placeHolder.jpg");
+  background-position: center;
 }
 .card:hover .card_side_front {
   transform: rotateY(-180deg);
@@ -272,7 +273,7 @@ body {
   background-image: linear-gradient(to right bottom, #000, #200900), url("../Images/playerSimulatorWebsite.JPG");
 }
 .card_picture-2 {
-  background-image: linear-gradient(to right bottom, #000, #03702f), url("../Images/tasksPhoto.png");
+  background-image: linear-gradient(to right bottom, #000, #03702f), url("../Images/TasksImageTasks.png");
 }
 .card_picture-3 {
   background-image: linear-gradient(to right bottom, #000, #000), url("../Images/placeHolder.jpg");
