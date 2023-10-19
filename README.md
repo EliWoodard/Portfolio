@@ -2,11 +2,11 @@
 
 ## Overview
 
-This repository contains the code for the portfolio website. As a Computer Science major and an aspiring Software Engineer, I've created this website to showcase his projects, skills, and experiences.
+This repository contains the code for the portfolio website. As a Computer Science major and an aspiring Software Engineer, I've created this website to showcase my projects, skills, and experiences.
 
-The website is structured into different sections, including a header with a navigation bar, an 'About' section, Education, Career, and a 'Projects' section. It has a modern design with animations to improve user experience.
+My portfolio is split into 6 sections. The header required three.js with some complicated steps to get everything to match with dynamic web design. The contact section doesnt have any functinoality as the only interactive steps would be transfering a user to their email applciation.
 
-![Portfolio Screenshot](./Images/portfolioImage.JPG)
+![Portfolio Screenshot](./Images/PortfolioHeader.png)
 
 ## Technologies Used
 
