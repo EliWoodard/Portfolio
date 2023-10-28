@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
+    const submitButton = document.getElementById('Contact-Submit');
+
     let scene, camera, renderer, earth, clouds, satellites = [], satellitesGroup;
 
     var NUM_SATELLITES = 0;  // number of satellites in each band
@@ -129,8 +131,6 @@ document.addEventListener("DOMContentLoaded", function() {
         renderer.render(scene, camera);
     }
     
-
-    
     function onWindowResize() {
         const headerWidth = header.clientWidth;
         const headerHeight = header.clientHeight;
@@ -147,6 +147,14 @@ document.addEventListener("DOMContentLoaded", function() {
         camera.position.x = -8 - (-1 * steps/30);; 
     }
     
-    
     init();    
+
+    submitButton.addEventListener('click', function(event) {
+        event.preventDefault();
+    
+        // Clear the content of the input fields and the textarea
+        document.getElementById('Contact-Name').value = '';
+        document.getElementById('Contact-Email').value = '';
+        document.getElementById('Contact-Message').value = '';
+    });
 });
