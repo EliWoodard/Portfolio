@@ -136,7 +136,6 @@ body {
 }
 
 .about_heading:before {
-  position: absolute;
   content: "";
   border-bottom: 18px solid #e70000;
   width: 12rem;
@@ -146,6 +145,11 @@ body {
   left: 1.5rem;
   top: 4.5rem;
   z-index: -1;
+}
+
+#education_heading:before {
+  width: 18rem;
+  left: 3rem;
 }
 
 .info_blurb {

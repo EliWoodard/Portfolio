@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const submitButton = document.getElementById('Contact-Submit');
+    // const submitButton = document.getElementById('Contact-Submit');
 
     let scene, camera, renderer, earth, clouds, satellites = [], satellitesGroup;
 
@@ -149,11 +149,11 @@ document.addEventListener("DOMContentLoaded", function() {
     
     init();    
 
-    submitButton.addEventListener('click', function(event) {
-        event.preventDefault();
+    // submitButton.addEventListener('click', function(event) {
+    //     event.preventDefault();
     
-        document.getElementById('Contact-Name').value = '';
-        document.getElementById('Contact-Email').value = '';
-        document.getElementById('Contact-Message').value = '';
-    });
+    //     document.getElementById('Contact-Name').value = '';
+    //     document.getElementById('Contact-Email').value = '';
+    //     document.getElementById('Contact-Message').value = '';
+    // });
 });
