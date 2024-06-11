@@ -4,9 +4,13 @@
 
 This repository contains the code for my portfolio website. As a Computer Science major and an aspiring Software Engineer, I've created this website to showcase my projects, skills, and experiences.
 
-My portfolio is split into 6 sections. The header required three.js with some complicated steps to get everything to match with dynamic web design. The contact section doesnt have any functinoality as the only interactive steps would be transfering a user to their email applciation. I removed this section until I can add functionality. 
-
 ![Portfolio Screenshot](./Images/PortfolioHeader.png)
+
+## Running locally
+1. Download the repo onto your system.
+2. Install Node.js v20.10.0
+3. Change directory to the project.
+4. Run `node .\server.js` 
 
 ## Technologies Used
 
@@ -16,8 +20,6 @@ My portfolio is split into 6 sections. The header required three.js with some co
 - SASS
 - Three.js
 - particles.js
-
-3. Open `index.html` in your web browser.
 
 ## Contact
 
