@@ -137,12 +137,11 @@ body {
 
 .about_heading:before {
   content: "";
-  border-bottom: 18px solid #e70000;
-  width: 12rem;
+  border-bottom: 15px solid #ff3a48;
   display: block;
   margin: 0 auto;
   position: relative;
-  left: 1.5rem;
+  left: 20px;
   top: 4.5rem;
   z-index: -1;
 }
@@ -299,7 +298,7 @@ body {
   box-decoration-break: clone;
 }
 .card_heading-span--1 {
-  background-image: linear-gradient(to right bottom, rgba(231, 0, 0, 0.65), rgba(32, 9, 0, 0.65));
+  background-image: linear-gradient(to right bottom, rgba(255, 58, 72, 0.65), rgba(32, 9, 0, 0.65));
 }
 .card_heading-span--2 {
   background-image: linear-gradient(to right bottom, rgba(33, 146, 255, 0.65), rgba(56, 229, 77, 0.65));
@@ -349,7 +348,7 @@ body {
   border-image-slice: 1;
   border-width: 3px;
   border-radius: 10px;
-  background-image: linear-gradient(#000, #000), radial-gradient(at top left, #ababab, #e70000);
+  background-image: linear-gradient(#000, #000), radial-gradient(at top left, #ababab, #ff3a48);
   background-origin: border-box;
   background-clip: content-box, border-box;
   transition: box-shadow 0.3s ease;
@@ -1359,16 +1358,19 @@ body {
 #headerButton {
   position: relative;
   display: inline-block;
-  margin-top: 10%;
+  margin-top: 15%;
+  width: 60%;
+  height: 7%;
 }
 
 #viewButtonLink {
   display: inline-block;
   text-decoration: none;
+  width: 100%;
+  height: 100%;
 }
 
 #viewButton {
-  position: relative;
   width: 100%;
   border: 1px solid rgb(255, 255, 255);
   color: white;
@@ -1377,6 +1379,11 @@ body {
   cursor: pointer;
   transition: transform 0.2s;
   height: 100%;
+  font-size: 80%;
+  font-family: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #viewButton::before,
@@ -1446,7 +1453,7 @@ body {
   margin-right: 5rem;
 }
 .navigation_item:hover {
-  color: #e70000;
+  color: #ff3a48;
   transform: translateY(-1px);
 }
 .navigation_item:active {
@@ -1455,7 +1462,7 @@ body {
 
 .navigation_item a.active-section {
   transition: all 0.3s;
-  color: #e70000;
+  color: #ff3a48;
 }
 
 @media (max-width: 600px) {

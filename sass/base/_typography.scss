@@ -10,13 +10,12 @@ body {
 }
 
 .about_heading:before {
-  content: '';
-  border-bottom: 18px solid $color-primary-red;
-  width: 12rem;
+  content: "";
+  border-bottom: 15px solid #ff3a48;
   display: block;
   margin: 0 auto;
   position: relative;
-  left: 1.5rem;
+  left: 20px;
   top: 4.5rem;
   z-index: -1;
 }

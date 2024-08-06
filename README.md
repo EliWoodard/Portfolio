@@ -12,8 +12,11 @@ This repository contains the code for my portfolio website. As a Computer Scienc
 3. Change directory to the project.
 4. Run `node .\server.js` 
 
-## Technologies Used
+## Compile sass
+- `sass main.scss ..\css\styles.css` or `sass --watch main.scss:..\css\styles.css`
 
+
+## Technologies Used
 - HTML
 - CSS
 - JavaScript
@@ -22,7 +25,6 @@ This repository contains the code for my portfolio website. As a Computer Scienc
 - particles.js
 
 ## Contact
-
 - Eli Woodard: [Github](https://github.com/EliWoodard)
 
 For any additional questions or comments, please contact me through GitHub.
