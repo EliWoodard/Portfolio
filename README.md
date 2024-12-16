@@ -27,4 +27,4 @@ This repository contains the code for my portfolio website. As a Computer Scienc
 ## Contact
 - Eli Woodard: [Github](https://github.com/EliWoodard)
 
-For any additional questions or comments, please contact me through GitHub.
+For any additional questions or comments, please contact me using the above link to locate my email and Linkdin.
