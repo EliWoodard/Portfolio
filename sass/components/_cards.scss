@@ -48,6 +48,14 @@
             background-position: center; 
         }
       }
+
+      &-4 {
+        .card_picture-4 {
+          background-image: linear-gradient(to right bottom, $color-primary-black, #03702f),
+            url('../Images/thumbnail.png');
+            background-position: center; 
+        }
+      }
     }
   }
 
@@ -82,6 +90,10 @@
         url('../Images/placeHolder.jpg');
     }
 
+    &-4 {
+      background-image: linear-gradient(to right bottom, $color-primary-black, $color-primary-black),
+        url('../Images/thumbnail.png');
+    }
   }
 
   &_heading {
@@ -118,6 +130,12 @@
           rgba($color-primary-black, .65),
           rgba($color-primary-light-gray, .65));
     }
+
+    &--4 {
+      background-image: linear-gradient(to right bottom,
+          rgba($color-primary-black, .65),
+          rgba($color-primary-light-gray, .65));
+    }
   }
 
   &_details {
@@ -144,5 +162,3 @@
     }
   }
 }
-
-// BACK SIDE STYLING
