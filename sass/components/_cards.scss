@@ -27,10 +27,11 @@
       background-color: $color-primary;
       transform: rotateY(180deg);
 
+      // BACK SIDE
       &-1 {
         .card_picture-1 {
           background-image: linear-gradient(to right bottom, $color-primary-black, #200900),
-            url('../Images/playerSimulatorBright.JPG');
+            url('../Images/JourneysInMiddleEarthBack.png');
         }
       }
 
@@ -45,15 +46,23 @@
         .card_picture-3 {
           background-image: linear-gradient(to right bottom, $color-primary-black, #03702f),
             url('../Images/placeHolder.jpg');
-            background-position: center; 
+          background-position: center;
         }
       }
 
       &-4 {
         .card_picture-4 {
           background-image: linear-gradient(to right bottom, $color-primary-black, #03702f),
-            url('../Images/thumbnail.png');
-            background-position: center; 
+            url('../Images/DatabricksPage2.png');
+          background-position: left;
+        }
+      }
+
+      &-5 {
+        .card_picture-4 {
+          background-image: linear-gradient(to right bottom, $color-primary-black, #03702f),
+            url('../Images/placeHolder.jpg');
+          background-position: center;
         }
       }
     }
@@ -77,7 +86,7 @@
 
     &-1 {
       background-image: linear-gradient(to right bottom, $color-primary-black, #200900),
-      url('../Images/playerSimulatorWebsite.JPG');
+        url('../Images/JourneysInMiddleEarthFront.png');
     }
 
     &-2 {
@@ -92,7 +101,12 @@
 
     &-4 {
       background-image: linear-gradient(to right bottom, $color-primary-black, $color-primary-black),
-        url('../Images/thumbnail.png');
+        url('../Images/DatabricksPage1.png');
+    }
+
+    &-5 {
+      background-image: linear-gradient(to right bottom, $color-primary-black, $color-primary-black),
+        url('../Images/placeHolder.jpg');
     }
   }
 
@@ -115,26 +129,32 @@
 
     &--1 {
       background-image: linear-gradient(to right bottom,
-          rgba($color-primary-red, .65),
+          rgba(#352800, .65),
           rgba(#200900, .65));
     }
 
     &--2 {
       background-image: linear-gradient(to right bottom,
-          rgba(#2192FF, .65),
-          rgba(#38E54D, .65));
+          rgba(#948c62, .65),
+          rgba(#378044, .65));
     }
 
     &--3 {
       background-image: linear-gradient(to right bottom,
-          rgba($color-primary-black, .65),
-          rgba($color-primary-light-gray, .65));
+          rgba(#ac7e00, .65),
+          rgba(#58513b, .65));
     }
 
     &--4 {
       background-image: linear-gradient(to right bottom,
-          rgba($color-primary-black, .65),
-          rgba($color-primary-light-gray, .65));
+          rgba(#126d00, .65),
+          rgba(#001950, .65));
+    }
+
+    &--5 {
+      background-image: linear-gradient(to right bottom,
+          rgba(#ac7e00, .65),
+          rgba(#58513b, .65));
     }
   }
 

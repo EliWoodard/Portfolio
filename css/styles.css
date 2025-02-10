@@ -250,7 +250,7 @@ body {
   transform: rotateY(180deg);
 }
 .card_side_back-1 .card_picture-1 {
-  background-image: linear-gradient(to right bottom, #000, #200900), url("../Images/playerSimulatorBright.JPG");
+  background-image: linear-gradient(to right bottom, #000, #200900), url("../Images/JourneysInMiddleEarthBack.png");
 }
 .card_side_back-2 .card_picture-2 {
   background-image: linear-gradient(to right bottom, #000, #03702f), url("../Images/TasksImageCourses.png");
@@ -260,7 +260,11 @@ body {
   background-position: center;
 }
 .card_side_back-4 .card_picture-4 {
-  background-image: linear-gradient(to right bottom, #000, #03702f), url("../Images/thumbnail.png");
+  background-image: linear-gradient(to right bottom, #000, #03702f), url("../Images/DatabricksPage2.png");
+  background-position: left;
+}
+.card_side_back-5 .card_picture-4 {
+  background-image: linear-gradient(to right bottom, #000, #03702f), url("../Images/placeHolder.jpg");
   background-position: center;
 }
 .card:hover .card_side_front {
@@ -277,7 +281,7 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 }
 .card_picture-1 {
-  background-image: linear-gradient(to right bottom, #000, #200900), url("../Images/playerSimulatorWebsite.JPG");
+  background-image: linear-gradient(to right bottom, #000, #200900), url("../Images/JourneysInMiddleEarthFront.png");
 }
 .card_picture-2 {
   background-image: linear-gradient(to right bottom, #000, #03702f), url("../Images/TasksImageTasks.png");
@@ -286,7 +290,10 @@ body {
   background-image: linear-gradient(to right bottom, #000, #000), url("../Images/placeHolder.jpg");
 }
 .card_picture-4 {
-  background-image: linear-gradient(to right bottom, #000, #000), url("../Images/thumbnail.png");
+  background-image: linear-gradient(to right bottom, #000, #000), url("../Images/DatabricksPage1.png");
+}
+.card_picture-5 {
+  background-image: linear-gradient(to right bottom, #000, #000), url("../Images/placeHolder.jpg");
 }
 .card_heading {
   font-size: 2.8rem;
@@ -305,16 +312,19 @@ body {
   box-decoration-break: clone;
 }
 .card_heading-span--1 {
-  background-image: linear-gradient(to right bottom, rgba(255, 58, 72, 0.65), rgba(32, 9, 0, 0.65));
+  background-image: linear-gradient(to right bottom, rgba(53, 40, 0, 0.65), rgba(32, 9, 0, 0.65));
 }
 .card_heading-span--2 {
-  background-image: linear-gradient(to right bottom, rgba(33, 146, 255, 0.65), rgba(56, 229, 77, 0.65));
+  background-image: linear-gradient(to right bottom, rgba(148, 140, 98, 0.65), rgba(55, 128, 68, 0.65));
 }
 .card_heading-span--3 {
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.65), rgba(51, 51, 51, 0.65));
+  background-image: linear-gradient(to right bottom, rgba(172, 126, 0, 0.65), rgba(88, 81, 59, 0.65));
 }
 .card_heading-span--4 {
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.65), rgba(51, 51, 51, 0.65));
+  background-image: linear-gradient(to right bottom, rgba(18, 109, 0, 0.65), rgba(0, 25, 80, 0.65));
+}
+.card_heading-span--5 {
+  background-image: linear-gradient(to right bottom, rgba(172, 126, 0, 0.65), rgba(88, 81, 59, 0.65));
 }
 .card_details {
   padding: 1rem;
