@@ -263,9 +263,8 @@ body {
   background-image: linear-gradient(to right bottom, #000, #03702f), url("../Images/DatabricksPage2.png");
   background-position: left;
 }
-.card_side_back-5 .card_picture-4 {
-  background-image: linear-gradient(to right bottom, #000, #03702f), url("../Images/placeHolder.jpg");
-  background-position: center;
+.card_side_back-5 .card_picture-5 {
+  background-image: linear-gradient(to right bottom, #000, #200900), url("../Images/MapSimBack.png");
 }
 .card:hover .card_side_front {
   transform: rotateY(-180deg);
@@ -293,7 +292,7 @@ body {
   background-image: linear-gradient(to right bottom, #000, #000), url("../Images/DatabricksPage1.png");
 }
 .card_picture-5 {
-  background-image: linear-gradient(to right bottom, #000, #000), url("../Images/placeHolder.jpg");
+  background-image: linear-gradient(to right bottom, #000, #000), url("../Images/MapSimFront.png");
 }
 .card_heading {
   font-size: 2.8rem;

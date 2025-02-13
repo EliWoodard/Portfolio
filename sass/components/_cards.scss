@@ -59,10 +59,9 @@
       }
 
       &-5 {
-        .card_picture-4 {
-          background-image: linear-gradient(to right bottom, $color-primary-black, #03702f),
-            url('../Images/placeHolder.jpg');
-          background-position: center;
+        .card_picture-5 {
+          background-image: linear-gradient(to right bottom, $color-primary-black, #200900),
+            url('../Images/MapSimBack.png');
         }
       }
     }
@@ -106,7 +105,7 @@
 
     &-5 {
       background-image: linear-gradient(to right bottom, $color-primary-black, $color-primary-black),
-        url('../Images/placeHolder.jpg');
+        url('../Images/MapSimFront.png');
     }
   }
 
