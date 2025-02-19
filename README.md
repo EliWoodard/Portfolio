@@ -15,6 +15,13 @@ This repository contains the code for my portfolio website. As a Computer Scienc
 ## Compile sass
 - `sass main.scss ..\css\styles.css` or `sass --watch main.scss:..\css\styles.css`
 
+## Projects
+- [JourneyToMiddleEarth](https://eliwoodard.github.io/JourneyToMiddleEarth/)
+- [Tasks](https://eliwoodard.github.io/Tasks/)
+- [DatabricksGenAI](https://eliwoodard.github.io/DatabricksGenAI/)
+- [MapSimulator](https://mapsimulator.onrender.com/)
+- [Database Project](https://github.com/EliWoodard/DatabaseConnection)
+
 
 ## Technologies Used
 - HTML
