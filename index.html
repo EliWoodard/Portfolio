@@ -61,20 +61,18 @@
       <h2 class="about_heading section_heading">About</h2>
       <div id="about_contents">
         <div id="portfolio_info">
-          <img src="Images/PersonalImage.jpg" alt="" id="avatar_icon">
+          <img src="Images/profilePicture.jpg" alt="" id="avatar_icon">
           <p id="about_text">
-            As a graduate from Boise State University, I have developed strong communication and organizational
-            skills essential for any project. My academic journey has fueled my passion for computer science and driven
-            me to
-            continue honing my skills.
+            As a graduate from Boise State University, I have developed strong communication and organizational skills essential for any project. My academic and professional
+            journey has fueled my passion for computer science and driven me to continue honing my skills.
 
           </p>
         </div>
         <div id="skills">
           <div class="skills_row">
             <div class="skills_item">
-              <img src="Images/HTML-logo.png" alt="">
-              <div class="logo_name">HTML</div>
+              <img src="Images/CSharp-Logo.png" alt="">
+              <div class="logo_name">C#</div>
             </div>
             <div class="skills_item">
               <img src="Images/SASS-logo.png" alt="">
@@ -147,7 +145,6 @@
             capabilities, and I collaborated with my team using Scrum practices on GitHub to ensure smooth project
             progression.
           </li>
-          <!-- <li class="course_links"><a href="https://github.com/Eli-Woodard/CS321-003-f22-team-02" target="_blank">Team Project Link</a></li> -->
         </div>
         <div class="course_highlight_box">
           <li class="course_title">Programming Languages</li>
@@ -165,7 +162,6 @@
             for the creation, modification, and
             testing of these structures.<br><br>
           </li>
-          <!-- <li class="course_links"><a href="https://github.com/Eli-Woodard/Project3" target="_blank">Team Project Link</a></li> -->
         </div>
         <div class="course_highlight_box">
           <li class="course_title">Algorithms</li>
@@ -196,13 +192,78 @@
             functions within a switched LAN environment.
           </li>
         </div>
-      </div> <!--We will put the 6 squares representing each course highlight here-->
+      </div> 
     </section>
     <section id='career'>
       <h2 class="about_heading section_heading">Career</h2>
+      <!--Tapani Career Section-->
       <div class="education_blurb">
         <div class="school_info_box">
-          <p id="career_blurb_label">OIT</p>
+          <p class="career_blurb_label">CTS</p>
+          <div class="education_blurb_text_container">
+            <p class="school_text">Junior Software Engineer</p>
+            <p class="specialization_text">Tapani Inc.</p>
+          </div>
+        </div>
+        <p class="date_to_date_text">April 2025 - Present</p>
+      </div>
+      <div class="career_container">
+        <div class="career_images">
+          <img src="Images/tapaniImage1.jpg" class="left_career_image">
+          <img src="Images/tapaniImage2.jpg" class="right_career_image">
+          <img src="Images/tapaniImage3.jpg" class="middle_career_image">
+        </div>
+        <div class="career_text">
+          At Tapani Inc., I entered an unfamiliar full-stack .NET environment and rapidly became proficient in building internal tools that enhanced workflow automation and 
+          team efficiency. I took ownership of multiple features across the stack, working with technologies such as C#, .NET (Razor Pages), SQL, and MudRazor to design and 
+          implement responsive, data-driven web interfaces. With minimal onboarding, I independently deployed functional tools that were integrated into live operations 
+          within weeks. <br>
+          <br>
+          This role demanded fast adaptation, proactive problem-solving, and clean version control practices using SourceTree and Bitbucket. The project required close 
+          attention to backend logic, user interaction, and database performance, reinforcing my ability to deliver scalable and maintainable software. By working hands-
+          on with real-world business needs, I strengthened my capacity to execute full-stack solutions efficiently and autonomously, all while maintaining production-level 
+          quality in a timely manner.
+        </div>
+      </div>
+      <!--End of Tapani Career Section-->
+      <!--Micron Career Section-->
+      <div class="education_blurb">
+        <div class="school_info_box">
+          <p class="career_blurb_label">TSE</p>
+          <div class="education_blurb_text_container">
+            <p class="school_text">Probe KEG Process Engineer</p>
+            <p class="specialization_text">Micron Internship</p>
+          </div>
+        </div>
+        <p class="date_to_date_text">May 2024 - Aug 2024</p>
+      </div>
+      <div class="career_container">
+        <div class="career_images">
+          <img src="Images/micronImage1.jpg" class="left_career_image">
+          <img src="Images/micronImage2.avif" class="right_career_image">
+          <img src="Images/micronImage3.jpg" class="middle_career_image">
+        </div>
+        <div class="career_text">
+          At Micron Technology, I immersed myself in a complex software environment, focusing on modernizing the
+          codebase and refining existing workflows to support large-scale computational tasks. I invested significant
+          effort analyzing hundreds of files in HTML, CSS/SASS, Java, JavaScript, and Perl, deconstructing legacy logic
+          to understand how each component contributed to Micron’s operational ecosystem. Armed with this insight, I
+          collaborated with colleagues to transition from the HTCondor workload management system to Micron’s in-house
+          WARP solution, ensuring seamless integration across front-end interfaces and back-end infrastructures. <br>
+          <br>
+          This work involved careful debugging to resolve subtle conflicts and tailoring performance improvements to
+          meet
+          strict efficiency standards. By engaging with cross-functional teams, I learned to balance technical rigor
+          with clear communication, ensuring that complex tools and processes remained accessible to a diverse user
+          base. Ultimately, my time at Micron strengthened my ability to navigate intricate software environments and
+          taught me how thoughtful refactoring can elevate system resilience, scalability, and clarity.
+        </div>
+      </div>
+      <!--End of Micron Career Section-->
+      <!--OIT Career Section-->
+      <div class="education_blurb">
+        <div class="school_info_box">
+          <p class="career_blurb_label">OIT</p>
           <div class="education_blurb_text_container">
             <p class="school_text">Student HPC Systems Admin</p>
             <p class="specialization_text">BSU Internship</p>
@@ -210,15 +271,13 @@
         </div>
         <p class="date_to_date_text">Jun 2022 - Apr 2024</p>
       </div>
-      <div id="career_container">
-        <div id="career_images">
-          <img src="Images/CampusImage.jpg" id="middle_career_image">
-          <div id="career_images_column">
-            <img src="Images/borahImage.png" id="left_career_image">
-            <img src="Images/RiverfrontHall.jpg" id="right_career_image">
-          </div>
-        </div>
-        <div id="career_text">
+      <div class="career_container">
+        <div class="career_images">
+          <img src="Images/borahImage.png" class="left_career_image">
+          <img src="Images/RiverfrontHall.jpg" class="right_career_image">
+          <img src="Images/CampusImage.jpg" class="middle_career_image">
+        </div>      
+        <div class="career_text">
           During my internship as a Student HPC Systems Admin at Riverfront Hall, I dove deep into the workings of the
           Borah and R2 Cluster.
           I began with tasks like reviewing automation scripts in Python and managing account creation. This hands-on
@@ -239,43 +298,10 @@
           shift underscored
           the importance of initiative and adaptability in tech roles. After nearly a year at Research Computing, I had
           grown from a new
-          intern to a key team member, ready to tackle more complex challenges.<br>
+          intern to a key team member, ready to tackle more complex challenges.
         </div>
       </div>
-      <div class="education_blurb">
-        <div class="school_info_box">
-          <p id="career_blurb_label">TSE</p>
-          <div class="education_blurb_text_container">
-            <p class="school_text">Probe KEG Process Engineer</p>
-            <p class="specialization_text">Micron Internship</p>
-          </div>
-        </div>
-        <p class="date_to_date_text">May 2024 - Aug 2024</p>
-      </div>
-      <div id="career_container">
-        <div id="career_images">
-          <img src="Images/micronImage1.jpg" id="middle_career_image">
-          <div id="career_images_column">
-            <img src="Images/micronImage2.jpg" id="left_career_image">
-            <img src="Images/micronImage3.avif" id="right_career_image">
-          </div>
-        </div>
-        <div id="career_text">
-          At Micron Technology, I immersed myself in a complex software environment, focusing on modernizing the
-          codebase and refining existing workflows to support large-scale computational tasks. I invested significant
-          effort analyzing hundreds of files in HTML, CSS/SASS, Java, JavaScript, and Perl, deconstructing legacy logic
-          to understand how each component contributed to Micron’s operational ecosystem. Armed with this insight, I
-          collaborated with colleagues to transition from the HTCondor workload management system to Micron’s in-house
-          WARP solution, ensuring seamless integration across front-end interfaces and back-end infrastructures. <br>
-          <br>
-          This work involved careful debugging to resolve subtle conflicts and tailoring performance improvements to
-          meet
-          strict efficiency standards. By engaging with cross-functional teams, I learned to balance technical rigor
-          with clear communication, ensuring that complex tools and processes remained accessible to a diverse user
-          base. Ultimately, my time at Micron strengthened my ability to navigate intricate software environments and
-          taught me how thoughtful refactoring can elevate system resilience, scalability, and clarity.
-        </div>
-      </div>
+      <!--End of OIT Career Section-->
     </section>
     <section id="projects">
       <h2 class="about_heading section_heading">Projects</h2>
@@ -463,57 +489,8 @@
             </div>
           </div>
         </div>
-        <!-- <div class="col-1-of-3" id="col-margin">
-          <div class="card">
-            <div class="card_side card_side_front">
-              <div class="card_picture card_picture-3">
-                &nbsp;
-              </div>
-              <h4 class="card_heading">
-                <span class="card_heading-span card_heading-span--3">Database Con.</span>
-              </h4>
-              <div class="card_details">
-                <p class="info_blurb">
-                  The Student Grading System simplifies managing classes, assignments, and grades with an intuitive
-                  database-connected command-line interface.
-                </p>
-              </div>
-            </div>
-            <div class="card_side card_side_back card_side_back-3">
-              <div class="card_picture card_picture-3">
-                &nbsp;
-              </div>
-              <h4 class="card_heading">
-                <span class="card_heading-span card_heading-span--3">Info</span>
-              </h4>
-              <div class="card_details">
-                <ul>
-                  <li>Completed - 12/1/2024</li>
-                  <li>Utilized - Java & MySQL</li>
-                  <li>Tools - VSCode & MySQL WorkBench</li>
-                  <li><a class="githubLink" href="https://github.com/EliWoodard/DatabaseConnection"
-                      target="_blank">Github link</a> </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div> -->
       </div>
     </section>
-    <!-- <section id="contact">
-      <h2 class="about_heading section_heading">Contact</h2>
-      <div id="conatct-section">
-        <p class="contact-text">
-          Have any questions or suggestions? Leave some details and I'll get back to you as soon as possible.
-        </p>
-        <input class="contact" id="Contact-Name" placeholder="Name">
-        <input class="contact" id="Contact-Email" placeholder="Email">
-        <textarea id="Contact-Message" placeholder="Message"></textarea>
-        <div id="submit-button">
-          <button id="Contact-Submit">Submit</button>
-        </div>
-      </div>
-    </section> -->
   </div>
 
 
@@ -525,7 +502,7 @@
     </div>
     <br>
     <div class="name-year">
-      Eli Woodard @2023
+      Eli Woodard @2025
     </div>
   </div>
 </body>
