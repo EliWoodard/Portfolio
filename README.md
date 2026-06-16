@@ -1,37 +1,49 @@
-# Eli Woodard's Portfolio Website
+# Eli Woodard Portfolio
 
-## Overview
+Modern software engineering portfolio for Eli Woodard. The site is intentionally static, fast, dependency-light, and optimized for recruiters reviewing full-stack engineering, HPC, and data-focused experience.
 
-This repository contains the code for my portfolio website. As a Computer Science major and an aspiring Software Engineer, I've created this website to showcase my projects, skills, and experiences.
+## Highlights
 
-![Portfolio Screenshot](./Images/PortfolioHeader.png)
+- Semantic single-page portfolio with sections for hero, about, experience, projects, skills, certification, education, and contact.
+- Recruiter-first project cards with screenshots, technology badges, links, and concise impact notes.
+- No runtime CDN dependencies, jQuery, Three.js, or particle effects.
+- Optimized WebP project/profile images served from `Images/optimized`.
+- Accessible navigation, visible focus states, reduced-motion support, and responsive layouts for mobile through ultrawide screens.
 
-## Running locally
-1. Download the repo onto your system.
-2. Install Node.js v20.10.0
-3. Change directory to the project.
-4. Run `node .\server.js` 
+## Running Locally
 
-## Compile sass
-- `sass main.scss ..\css\styles.css` or `sass --watch main.scss:..\css\styles.css`
+```bash
+node server.js
+```
 
-## Projects
-- [JourneyToMiddleEarth](https://eliwoodard.github.io/JourneyToMiddleEarth/)
-- [Tasks](https://eliwoodard.github.io/Tasks/)
+Then open `http://127.0.0.1:3000/`.
+
+The site can also be opened directly from `index.html` because it has no build-time JavaScript requirement.
+
+## Styles
+
+The authored stylesheet lives in `sass/main.scss`. Compile the production CSS with:
+
+```bash
+sass sass/main.scss css/styles.css --style=compressed --no-source-map
+```
+
+or:
+
+```bash
+npm run build:css
+```
+
+## Featured Projects
+
 - [DatabricksGenAI](https://eliwoodard.github.io/DatabricksGenAI/)
 - [MapSimulator](https://mapsimulator.onrender.com/)
+- [JourneyToMiddleEarth](https://eliwoodard.github.io/JourneyToMiddleEarth/)
+- [Tasks](https://eliwoodard.github.io/Tasks/)
 - [Database Project](https://github.com/EliWoodard/DatabaseConnection)
 
-
-## Technologies Used
-- HTML
-- CSS
-- JavaScript
-- SASS
-- Three.js
-- particles.js
-
 ## Contact
-- Eli Woodard: [Github](https://github.com/EliWoodard)
 
-For any additional questions or comments, please contact me using the above link to locate my email and Linkedin.
+- [GitHub](https://github.com/EliWoodard)
+- [LinkedIn](https://www.linkedin.com/in/elijah-woodard-a9609524a)
+- [Email](mailto:eliwoodard136@gmail.com)

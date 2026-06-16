@@ -1,54 +1,65 @@
-const http = require('http');
-const fs = require('fs');
-const path = require('path');
+const http = require("http");
+const fs = require("fs");
+const path = require("path");
 
-const hostname = '127.0.0.1';
-const port = 3000;
+const hostname = "127.0.0.1";
+const port = process.env.PORT || 3001;
+
+const contentTypes = {
+  ".avif": "image/avif",
+  ".css": "text/css; charset=utf-8",
+  ".html": "text/html; charset=utf-8",
+  ".ico": "image/x-icon",
+  ".jpg": "image/jpeg",
+  ".jpeg": "image/jpeg",
+  ".js": "text/javascript; charset=utf-8",
+  ".json": "application/json; charset=utf-8",
+  ".png": "image/png",
+  ".svg": "image/svg+xml",
+  ".webp": "image/webp"
+};
+
+function resolveRequestPath(requestUrl) {
+  const pathname = decodeURIComponent(new URL(requestUrl, `http://${hostname}:${port}`).pathname);
+  const requestedPath = pathname === "/" ? "index.html" : pathname.slice(1);
+  const filePath = path.join(__dirname, requestedPath);
+
+  if (!filePath.startsWith(__dirname)) {
+    return null;
+  }
+
+  return filePath;
+}
 
 const server = http.createServer((req, res) => {
-    let filePath = path.join(__dirname, req.url === '/' ? 'index.html' : req.url);
-    let extname = path.extname(filePath);
-    let contentType = 'text/html';
+  const filePath = resolveRequestPath(req.url);
 
-    switch (extname) {
-        case '.js':
-            contentType = 'text/javascript';
-            break;
-        case '.css':
-            contentType = 'text/css';
-            break;
-        case '.json':
-            contentType = 'application/json';
-            break;
-        case '.png':
-            contentType = 'image/png';
-            break;
-        case '.jpg':
-            contentType = 'image/jpg';
-            break;
-        case '.ico':
-            contentType = 'image/x-icon';
-            break;
+  if (!filePath) {
+    res.writeHead(403, { "Content-Type": "text/plain; charset=utf-8" });
+    res.end("Forbidden");
+    return;
+  }
+
+  fs.readFile(filePath, (error, content) => {
+    if (error) {
+      const status = error.code === "ENOENT" ? 404 : 500;
+      const message = status === 404 ? "Not found" : `Server error: ${error.code}`;
+      res.writeHead(status, { "Content-Type": "text/plain; charset=utf-8" });
+      res.end(message);
+      return;
     }
 
-    fs.readFile(filePath, (error, content) => {
-        if (error) {
-            if (error.code == 'ENOENT') {
-                fs.readFile(path.join(__dirname, '404.html'), (error, content) => {
-                    res.writeHead(200, { 'Content-Type': 'text/html' });
-                    res.end(content, 'utf-8');
-                });
-            } else {
-                res.writeHead(500);
-                res.end(`Server Error: ${error.code}`);
-            }
-        } else {
-            res.writeHead(200, { 'Content-Type': contentType });
-            res.end(content, 'utf-8');
-        }
-    });
+    const extname = path.extname(filePath).toLowerCase();
+    const headers = {
+      "Content-Type": contentTypes[extname] || "application/octet-stream",
+      "Cache-Control": extname === ".html" ? "no-cache" : "public, max-age=3600"
+    };
+
+    res.writeHead(200, headers);
+    res.end(content);
+  });
 });
 
 server.listen(port, hostname, () => {
-    console.log(`Server running at http://${hostname}:${port}/`);
+  console.log(`Portfolio running at http://${hostname}:${port}/`);
 });

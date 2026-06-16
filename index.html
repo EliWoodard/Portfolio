@@ -1,510 +1,496 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Eli Woodard is a software engineer focused on full-stack .NET systems, HPC workflows, data engineering concepts, and practical web applications.">
+  <meta name="theme-color" content="#090a0f">
+  <title>Eli Woodard | Software Engineer</title>
+
   <link rel="stylesheet" href="css/styles.css">
   <link rel="apple-touch-icon" sizes="180x180" href="Images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  <script src="javascript/script.js"></script>
-  <script src="javascript/particles.js" defer></script>
-  <script src="javascript/navigationBar.js" defer></script>
+  <script src="javascript/script.js" defer></script>
 
-  <meta charset="utf-8">
-  <title>Eli Woodard | Software Engineer Portfolio</title>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Elijah Woodard",
+      "alternateName": "Eli Woodard",
+      "jobTitle": "Software Engineer",
+      "email": "mailto:eliwoodard136@gmail.com",
+      "url": "https://github.com/EliWoodard",
+      "sameAs": [
+        "https://github.com/EliWoodard",
+        "https://www.linkedin.com/in/elijah-woodard-a9609524a"
+      ],
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Boise State University"
+      },
+      "knowsAbout": [
+        "C#",
+        ".NET",
+        "Razor Pages",
+        "SQL",
+        "High Performance Computing",
+        "Databricks",
+        "JavaScript",
+        "Node.js"
+      ]
+    }
+  </script>
 </head>
 
 <body>
-  <header class="header" id="home">
-    <div id="headerText">
-      <div id="headerTextName">Eli Woodard</div>
-      <div id="headerTextProfession">Software Engineer</div>
-      <div id="headerTextCareer">BSU</div>
-      <div id="headerButton">
-        <a href="#about" id="viewButtonLink">
-          <button id="viewButton">View my work</button>
-        </a>
-      </div>
-    </div>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a class="brand" href="#home" aria-label="Eli Woodard home">
+        <span class="brand-mark" aria-hidden="true">EW</span>
+        <span>Eli Woodard</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false"
+        aria-controls="nav-links" data-nav-toggle>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links" data-nav-links>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <nav class="navigation-bar">
-    <ul class="navigation">
-      <li class="navigation_item">
-        <a href="#home">Home</a>
-      </li>
-      <li class="navigation_item">
-        <a href="#about">About</a>
-      </li>
-      <li class="navigation_item">
-        <a href="#education">Education</a>
-      </li>
-      <li class="navigation_item">
-        <a href="#career">Career</a>
-      </li>
-      <li class="navigation_item">
-        <a href="#projects">Projects</a>
-      </li>
-      <!-- <li class="navigation_item">
-        <a href="#contact">Contact</a>
-      </li> -->
-    </ul>
-  </nav>
-  <div class="particles-wrapper">
-    <div id="particles-js" class="content-container"></div>
-    <section id='about'>
-      <h2 class="about_heading section_heading">About</h2>
-      <div id="about_contents">
-        <div id="portfolio_info">
-          <img src="Images/profilePicture.jpg" alt="" id="avatar_icon">
-          <p id="about_text">
-            As a graduate from Boise State University, I have developed strong communication and organizational skills essential for any project. My academic and professional
-            journey has fueled my passion for computer science and driven me to continue honing my skills.
-
+  <main id="main">
+    <section class="hero section" id="home" aria-labelledby="hero-title">
+      <div class="hero-layout">
+        <div class="hero-copy">
+          <p class="eyebrow">Full-stack software engineer</p>
+          <h1 id="hero-title">I build practical systems that make complex work simple.</h1>
+          <p class="hero-summary">
+            I am a Boise State Computer Science graduate working in full-stack .NET,
+            SQL-backed business applications, HPC support, and data-focused engineering workflows.
           </p>
-        </div>
-        <div id="skills">
-          <div class="skills_row">
-            <div class="skills_item">
-              <img src="Images/CSharp-Logo.png" alt="">
-              <div class="logo_name">C#</div>
-            </div>
-            <div class="skills_item">
-              <img src="Images/SASS-logo.png" alt="">
-              <div class="logo_name">SASS</div>
-            </div>
-            <div class="skills_item">
-              <img src="Images/Javascript-logo.png" alt="">
-              <div class="logo_name">Javascript</div>
-            </div>
-          </div>
-          <div class="skills_row">
-            <div class="skills_item">
-              <img src="Images/Java-logo.png" alt="">
-              <div class="logo_name">Java</div>
-            </div>
-            <div class="skills_item">
-              <img src="Images/Python-logo.png" alt="">
-              <div class="logo_name">Python</div>
-            </div>
-            <div class="skills_item">
-              <img src="Images/C-logo.png" alt="">
-              <div class="logo_name">C</div>
-            </div>
-            <div class="skills_item">
-              <img src="Images/Bash-logo.png" alt="">
-              <div class="logo_name">Bash</div>
-            </div>
-          </div>
-          <div class="skills_row">
-            <div class="skills_item">
-              <img src="Images/VSCodeLogo.png" alt="">
-              <div class="logo_name">VSCode</div>
-            </div>
-            <div class="skills_item">
-              <img src="Images/MySQL-Logo.png" alt="">
-              <div class="logo_name">MySQL</div>
-            </div>
-            <div class="skills_item">
-              <img src="Images/AngularIcon.png" alt="">
-              <div class="logo_name">Angular</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id='education'>
-      <h2 id="education_heading" class="about_heading section_heading">Education</h2>
-      <div class="education_blurb">
-        <div class="school_info_box">
-          <img id="BSU_Logo" src="Images/BSU_Logo.png" alt="BSU_Logo">
-          <div class="education_blurb_text_container">
-            <p class="school_text">Boise State University</p>
-            <p class="specialization_text">Bachelor in Computer Science | GPA 3.9</p>
-          </div>
-        </div>
-        <p class="date_to_date_text">August 2021 - December 2024</p>
-      </div>
-      <div id="course_highlight_text_container">
-        <p id="course_highlight_text">Course Highlights</p>
-      </div>
-      <div id="education_container">
-        <div class="course_highlight_box">
-          <li class="course_title">Data Structures</li>
-          <li class="course_description">In my final Bioinformatics project, my team tackled the challenges of
-            efficiently analyzing vast DNA sequences
-            from GeneBank files. Utilizing B-Trees, I optimized storage and retrieval processes. I further enhanced
-            system performance through
-            memory-saving binary representations and integrated caching. The project also incorporated SQLite databases
-            for advanced search
-            capabilities, and I collaborated with my team using Scrum practices on GitHub to ensure smooth project
-            progression.
-          </li>
-        </div>
-        <div class="course_highlight_box">
-          <li class="course_title">Programming Languages</li>
-          <li class="course_description">During the Programming Languages course, I deepened my understanding of Scheme
-            and the nuances of language grammar.
-            A significant project involved writing an interpretation program, translating from Java to a C, and helping
-            improve my understanding of interpreters.
-          </li>
-        </div>
-        <div class="course_highlight_box">
-          <li class="course_title">Computational Theory</li>
-          <li class="course_description">Computational Final Project included a Turing Machine simulator to emulate
-            machine behavior based on specific input rules.
-            I also gained experience with deterministic and non-deterministic finite automatas (DFAs and NFAs), allowing
-            for the creation, modification, and
-            testing of these structures.<br><br>
-          </li>
-        </div>
-        <div class="course_highlight_box">
-          <li class="course_title">Algorithms</li>
-          <li class="course_description"> In the ongoing algorithms class, we are immersed in mastering the calculation
-            of time and space complexities for diverse algorithms.
-            Key focus areas encompass matrix multiplication, the divide-and-conquer approach, the master method, and the
-            substitution method for both inductive and basis steps.
-            Furthermore, we are honing skills in crafting recursive trees to evaluate an algorithm's runtime.
-          </li>
-        </div>
-        <div class="course_highlight_box">
-          <li class="course_title">Electronics and Communication</li>
-          <li class="course_description">In the ECE330 Electronics and Communication class, we employ assembly code to
-            interface with and manipulate a specific board.
-            Our foundational exercises include coding tasks such as determining the min, max, and absolute values
-            directly in assembly.
-            Progressing further, we transitioned to C programming, where we constructed a program that leverages the
-            board's capabilities to play a song.
-          </li>
-        </div>
-        <div class="course_highlight_box">
-          <li class="course_title">Computer Networks</li>
-          <li class="course_description">In our Computer Networks course, we've delved into the mathematics behind
-            calculating Fourier coefficients and have explored the intricacies of various network architectures.
-            A notable topic covered includes the Hamming code and the process of encoding information using flags and
-            escape values.
-            As we progress, we anticipate utilizing tools like Surfshark, and have already grasped how a bridge
-            functions within a switched LAN environment.
-          </li>
-        </div>
-      </div> 
-    </section>
-    <section id='career'>
-      <h2 class="about_heading section_heading">Career</h2>
-      <!--Tapani Career Section-->
-      <div class="education_blurb">
-        <div class="school_info_box">
-          <p class="career_blurb_label">CTS</p>
-          <div class="education_blurb_text_container">
-            <p class="school_text">Junior Software Engineer</p>
-            <p class="specialization_text">Tapani Inc.</p>
-          </div>
-        </div>
-        <p class="date_to_date_text">April 2025 - Present</p>
-      </div>
-      <div class="career_container">
-        <div class="career_images">
-          <img src="Images/tapaniImage1.jpg" class="left_career_image">
-          <img src="Images/tapaniImage2.jpg" class="right_career_image">
-          <img src="Images/tapaniImage3.jpg" class="middle_career_image">
-        </div>
-        <div class="career_text">
-          At Tapani Inc., I entered an unfamiliar full-stack .NET environment and rapidly became proficient in building internal tools that enhanced workflow automation and 
-          team efficiency. I took ownership of multiple features across the stack, working with technologies such as C#, .NET (Razor Pages), SQL, and MudRazor to design and 
-          implement responsive, data-driven web interfaces. With minimal onboarding, I independently deployed functional tools that were integrated into live operations 
-          within weeks. <br>
-          <br>
-          This role demanded fast adaptation, proactive problem-solving, and clean version control practices using SourceTree and Bitbucket. The project required close 
-          attention to backend logic, user interaction, and database performance, reinforcing my ability to deliver scalable and maintainable software. By working hands-
-          on with real-world business needs, I strengthened my capacity to execute full-stack solutions efficiently and autonomously, all while maintaining production-level 
-          quality in a timely manner.
-        </div>
-      </div>
-      <!--End of Tapani Career Section-->
-      <!--Micron Career Section-->
-      <div class="education_blurb">
-        <div class="school_info_box">
-          <p class="career_blurb_label">TSE</p>
-          <div class="education_blurb_text_container">
-            <p class="school_text">Probe KEG Process Engineer</p>
-            <p class="specialization_text">Micron Internship</p>
-          </div>
-        </div>
-        <p class="date_to_date_text">May 2024 - Aug 2024</p>
-      </div>
-      <div class="career_container">
-        <div class="career_images">
-          <img src="Images/micronImage1.jpg" class="left_career_image">
-          <img src="Images/micronImage2.avif" class="right_career_image">
-          <img src="Images/micronImage3.jpg" class="middle_career_image">
-        </div>
-        <div class="career_text">
-          At Micron Technology, I immersed myself in a complex software environment, focusing on modernizing the
-          codebase and refining existing workflows to support large-scale computational tasks. I invested significant
-          effort analyzing hundreds of files in HTML, CSS/SASS, Java, JavaScript, and Perl, deconstructing legacy logic
-          to understand how each component contributed to Micron’s operational ecosystem. Armed with this insight, I
-          collaborated with colleagues to transition from the HTCondor workload management system to Micron’s in-house
-          WARP solution, ensuring seamless integration across front-end interfaces and back-end infrastructures. <br>
-          <br>
-          This work involved careful debugging to resolve subtle conflicts and tailoring performance improvements to
-          meet
-          strict efficiency standards. By engaging with cross-functional teams, I learned to balance technical rigor
-          with clear communication, ensuring that complex tools and processes remained accessible to a diverse user
-          base. Ultimately, my time at Micron strengthened my ability to navigate intricate software environments and
-          taught me how thoughtful refactoring can elevate system resilience, scalability, and clarity.
-        </div>
-      </div>
-      <!--End of Micron Career Section-->
-      <!--OIT Career Section-->
-      <div class="education_blurb">
-        <div class="school_info_box">
-          <p class="career_blurb_label">OIT</p>
-          <div class="education_blurb_text_container">
-            <p class="school_text">Student HPC Systems Admin</p>
-            <p class="specialization_text">BSU Internship</p>
-          </div>
-        </div>
-        <p class="date_to_date_text">Jun 2022 - Apr 2024</p>
-      </div>
-      <div class="career_container">
-        <div class="career_images">
-          <img src="Images/borahImage.png" class="left_career_image">
-          <img src="Images/RiverfrontHall.jpg" class="right_career_image">
-          <img src="Images/CampusImage.jpg" class="middle_career_image">
-        </div>      
-        <div class="career_text">
-          During my internship as a Student HPC Systems Admin at Riverfront Hall, I dove deep into the workings of the
-          Borah and R2 Cluster.
-          I began with tasks like reviewing automation scripts in Python and managing account creation. This hands-on
-          work, along with my
-          studies, sharpened my problem-solving skills and taught me the importance of team coordination.<br>
-          <br>
-          My responsibilities expanded to include editing the RCS OIT webpage using Wordpress and writing tutorials for
-          our usersbase.
-          These tasks emphasized the need for clear communication and ensuring our systems were easily navigable.<br>
-          <br>
-          One significant project I took on was assisting a researcher struggling with their website's efficiency. This
-          required in-depth
-          technical analysis, collaboration, and a closer look into various APIs. My recommendations resulted in marked
-          improvements for
-          the researcher's site.<br>
-          <br>
-          As my internship progressed, I took on more independent projects, moving away from daily routine tasks. This
-          shift underscored
-          the importance of initiative and adaptability in tech roles. After nearly a year at Research Computing, I had
-          grown from a new
-          intern to a key team member, ready to tackle more complex challenges.
-        </div>
-      </div>
-      <!--End of OIT Career Section-->
-    </section>
-    <section id="projects">
-      <h2 class="about_heading section_heading">Projects</h2>
-      <div class="row">
-        <div class="col-1-of-3" id="col-margin">
-          <div class="card">
-            <div class="card_side card_side_front">
-              <div class="card_picture card_picture-1">
-                &nbsp;
-              </div>
-              <h4 class="card_heading">
-                <span class="card_heading-span card_heading-span--1">Player Sim.</span>
-              </h4>
-              <div class="card_details">
-                <p class="info_blurb">
-                  Journeys in Middle Earth required emulation, and to ensure playability while online, I constructed a
-                  simulator. This project showcases simple front-end skills.
-                </p>
-              </div>
-            </div>
-            <div class="card_side card_side_back card_side_back-1">
-              <div class="card_picture card_picture-1">
-                &nbsp;
-              </div>
-              <h4 class="card_heading">
-                <span class="card_heading-span card_heading-span--1">Info</span>
-              </h4>
-              <div class="card_details">
-                <ul>
-                  <li>Completed - 6/14/2023</li>
-                  <li>Utilized - HTML, CSS, & Javascript</li>
-                  <li>Tools - VSCode & Github</li>
-                  <li><a class="githubLink" href="https://github.com/EliWoodard/JourneyToMiddleEarth"
-                      target="_blank">Github link</a> </li>
-                  <li> <a class="githubLink" href="https://eliwoodard.github.io/JourneyToMiddleEarth/"
-                      target="_blank">Page link</a> </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-1-of-3" id="col-margin">
-          <div class="card">
-            <div class="card_side card_side_front">
-              <div class="card_picture card_picture-2">
-                &nbsp;
-              </div>
-              <h4 class="card_heading">
-                <span class="card_heading-span card_heading-span--2">Tasks</span>
-              </h4>
-              <div class="card_details">
-                <p class="info_blurb">
-                  Tasks is a modular task management system designed to streamline college assignments and project
-                  tracking.</p>
-              </div>
-            </div>
-            <div class="card_side card_side_back card_side_back-2">
-              <div class="card_picture card_picture-2">
-                &nbsp;
-              </div>
-              <h4 class="card_heading">
-                <span class="card_heading-span card_heading-span--2">Info</span>
-              </h4>
-              <div class="card_details">
-                <ul>
-                  <li>Completed - 11/17/2023</li>
-                  <li>Utilized - HTML, CSS, & Javascript</li>
-                  <li>Tools - VSCode & Github</li>
-                  <li><a class="githubLink" href="https://github.com/EliWoodard/Tasks" target="_blank">Github link</a>
-                  </li>
-                  <li> <a class="githubLink" href="https://eliwoodard.github.io/Tasks/" target="_blank">Page link</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-1-of-3" id="col-margin">
-          <div class="card">
-            <div class="card_side card_side_front">
-              <div class="card_picture card_picture-4">
-                &nbsp;
-              </div>
-              <h4 class="card_heading">
-                <span class="card_heading-span card_heading-span--4">Databricks</span>
-              </h4>
-              <div class="card_details">
-                <p class="info_blurb">
-                  Databricks AI Pipeline is an enterprise-level data solution designed to handle complex data
-                  integration and machine learning workflows.
-                </p>
-              </div>
-            </div>
-            <div class="card_side card_side_back card_side_back-4">
-              <div class="card_picture card_picture-4">
-                &nbsp;
-              </div>
-              <h4 class="card_heading">
-                <span class="card_heading-span card_heading-span--4">Info</span>
-              </h4>
-              <div class="card_details">
-                <ul>
-                  <li>Completed - 2/10/2025</li>
-                  <li>Utilized - Databricks Notebooks & Tools</li>
-                  <li>Tools - Databricks, APIs, GitHub, & VSCode</li>
-                  <li><a class="githubLink" href="https://github.com/EliWoodard/DatabricksGenAI" target="_blank">Github
-                      link</a> </li>
-                  <li> <a class="githubLink" href="https://eliwoodard.github.io/DatabricksGenAI/" target="_blank">Page
-                      link</a> </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-1-of-3" id="col-margin">
-          <div class="card">
-            <div class="card_side card_side_front">
-              <div class="card_picture card_picture-5">
-                &nbsp;
-              </div>
-              <h4 class="card_heading">
-                <span class="card_heading-span card_heading-span--5">MapSimulator</span>
-              </h4>
-              <div class="card_details">
-                <p class="info_blurb">
-                  Map-Simulator is a real-time collaborative map building tool that allows players to interactively play
-                  The Lord of the Rings: Journeys in Middle-earth. </p>
-              </div>
-            </div>
-            <div class="card_side card_side_back card_side_back-5">
-              <div class="card_picture card_picture-5">
-                &nbsp;
-              </div>
-              <h4 class="card_heading">
-                <span class="card_heading-span card_heading-span--5">Info</span>
-              </h4>
-              <div class="card_details">
-                <ul>
-                  <li>Completed - 2/24/2025</li>
-                  <li>Utilized - Socket.io, Fabric.js, Front-end, & Back-end</li>
-                  <li>Tools - VSCode & Github</li>
-                  <li><a class="githubLink" href="https://github.com/EliWoodard/MapSimulator" target="_blank">Github
-                      link</a>
-                  </li>
-                  <li> <a class="githubLink" href="https://mapsimulator.onrender.com/" target="_blank">Page
-                    link</a> </li>
-                </ul>
-              </div>
-            </div>
+
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button button-primary" href="#projects">View projects</a>
+            <a class="button button-secondary" href="mailto:eliwoodard136@gmail.com">Email me</a>
           </div>
 
+          <ul class="hero-proof" aria-label="Career proof points">
+            <li>
+              <strong>BS Computer Science</strong>
+              <span>Boise State University, GPA 3.9</span>
+            </li>
+            <li>
+              <strong>170+ features shipped</strong>
+              <span>C#, .NET Razor Pages, MudBlazor, SQL</span>
+            </li>
+            <li>
+              <strong>HPC and data systems</strong>
+              <span>R2/Borah clusters, Databricks, WARP migration</span>
+            </li>
+          </ul>
         </div>
-        <div class="col-1-of-3" id="col-margin">
-          <div class="card">
-            <div class="card_side card_side_front">
-              <div class="card_picture card_picture-3">
-                &nbsp;
+
+        <aside class="snapshot-panel" aria-label="Professional snapshot">
+          <img src="Images/profile.webp" width="900" height="900"
+            alt="Portrait of Eli Woodard outdoors near a waterfall.">
+          <div class="snapshot-content">
+            <p class="snapshot-label">Current focus</p>
+            <p>
+              Building internal software that turns operational workflows into maintainable,
+              data-driven web tools.
+            </p>
+            <dl>
+              <div>
+                <dt>Primary stack</dt>
+                <dd>C# / .NET / SQL</dd>
               </div>
-              <h4 class="card_heading">
-                <span class="card_heading-span card_heading-span--3">Database Con.</span>
-              </h4>
-              <div class="card_details">
-                <p class="info_blurb">
-                  The Student Grading System simplifies managing classes, assignments, and grades with an intuitive
-                  database-connected command-line interface.
-                </p>
+              <div>
+                <dt>Systems background</dt>
+                <dd>HPC administration</dd>
               </div>
-            </div>
-            <div class="card_side card_side_back card_side_back-3">
-              <div class="card_picture card_picture-3">
-                &nbsp;
+              <div>
+                <dt>Certification</dt>
+                <dd>Databricks Fundamentals</dd>
               </div>
-              <h4 class="card_heading">
-                <span class="card_heading-span card_heading-span--3">Info</span>
-              </h4>
-              <div class="card_details">
-                <ul>
-                  <li>Completed - 12/1/2024</li>
-                  <li>Utilized - Java & MySQL</li>
-                  <li>Tools - VSCode & MySQL WorkBench</li>
-                  <li><a class="githubLink" href="https://github.com/EliWoodard/DatabaseConnection"
-                      target="_blank">Github link</a> </li>
-                </ul>
-              </div>
-            </div>
+            </dl>
           </div>
-        </div>
+        </aside>
       </div>
     </section>
-  </div>
 
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="section-header">
+        <p class="eyebrow">About me</p>
+        <h2 id="about-title">Engineer toward useful and maintainable tools.</h2>
+      </div>
+      <div class="about-grid">
+        <p>
+          I graduated from Boise State University with a Bachelor in Computer Science
+          and a 3.9 GPA. My academic and professional work has given me a practical foundation
+          across software engineering, systems administration, data workflows, and team
+          communication.
+        </p>
+        <p>
+          I have worked in unfamiliar legacy systems, HPC environments, and modern full-stack
+          applications. I am comfortable learning quickly, tracing requirements through the stack,
+          and delivering features that real teams can depend on.
+        </p>
+      </div>
+    </section>
 
-  <div id="footer">
-    <div id="GithubBox">
-      <a href="https://github.com/EliWoodard" class="github-link">
-        <img src="Images/GitHub-Image.png" alt="GitHub" class="github-image" />
-      </a>
-    </div>
-    <br>
-    <div class="name-year">
-      Eli Woodard @2025
-    </div>
-  </div>
+    <section class="section" id="experience" aria-labelledby="experience-title">
+      <div class="section-header">
+        <p class="eyebrow">Experience</p>
+        <h2 id="experience-title">Professional work across full-stack apps, semiconductor tooling, and HPC.</h2>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="timeline-meta">
+            <span>April 2025 - Present</span>
+            <span>Vancouver, WA</span>
+          </div>
+          <div class="timeline-body">
+            <p class="role-kicker">Tapani Inc.</p>
+            <h3>Software Engineer</h3>
+            <ul class="impact-list">
+              <li>Developed and maintained internal business applications using C#, .NET Razor Pages, MudBlazor, and SQL.</li>
+              <li>Designed and deployed 170+ features in a year, expanding workflow coverage and operational capability.</li>
+              <li>Owned multiple features from requirements through deployment with minimal oversight.</li>
+              <li>Used SourceTree and Bitbucket to keep production-oriented feature work organized and reviewable.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-meta">
+            <span>May 2024 - August 2024</span>
+            <span>Boise, ID</span>
+          </div>
+          <div class="timeline-body">
+            <p class="role-kicker">Micron Technology / TSE</p>
+            <h3>Probe KEG Process Engineer Intern</h3>
+            <ul class="impact-list">
+              <li>Reverse-engineered and migrated 250+ legacy files across HTML, CSS/Sass, Java, JavaScript, and Perl.</li>
+              <li>Helped move semiconductor test-analysis tooling from HTCondor to Micron's WARP platform.</li>
+              <li>Supported server and authentication updates using Apache, Node.js, Angular, and Azure authentication.</li>
+              <li>Integrated front-end and back-end components while debugging cross-system migration issues.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-meta">
+            <span>June 2022 - April 2024</span>
+            <span>Boise, ID</span>
+          </div>
+          <div class="timeline-body">
+            <p class="role-kicker">Boise State University / OIT</p>
+            <h3>Student HPC Systems Admin</h3>
+            <ul class="impact-list">
+              <li>Managed more than 200 user accounts for R2 and Borah HPC clusters while supporting university researchers.</li>
+              <li>Automated account setup and maintenance through Bash scripting, saving roughly 6 hours per week.</li>
+              <li>Maintained and optimized WordPress sites for university department workflows.</li>
+              <li>Wrote tutorials and support documentation to make research computing systems easier to adopt.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projects" aria-labelledby="projects-title">
+      <div class="section-header section-header-wide">
+        <div>
+          <p class="eyebrow">Featured projects</p>
+          <h2 id="projects-title">Personal projects that show implementation range and ability.</h2>
+        </div>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card project-card-featured">
+          <img src="Images/project-databricks.webp" width="1200" height="675"
+            alt="Databricks AI pipeline project interface with a scenic project overview screen.">
+          <div class="project-content">
+            <p class="project-type">Data and AI workflow</p>
+            <h3>Databricks AI Pipeline</h3>
+            <p>
+              A Databricks and LangChain project exploring retrieval-augmented generation, tool
+              integration, information retrieval, and machine learning workflow concepts.
+            </p>
+            <div class="project-notes">
+              <p><strong>Challenge:</strong> Connect data retrieval and AI workflow pieces into a coherent project presentation.</p>
+              <p><strong>Impact:</strong> Demonstrates current data engineering interests alongside the Databricks Fundamentals certification.</p>
+            </div>
+            <ul class="tag-list" aria-label="Databricks AI Pipeline technologies">
+              <li>Databricks</li>
+              <li>LangChain</li>
+              <li>APIs</li>
+              <li>GitHub Pages</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/EliWoodard/DatabricksGenAI" target="_blank" rel="noreferrer">GitHub</a>
+              <a href="https://eliwoodard.github.io/DatabricksGenAI/" target="_blank" rel="noreferrer">Live site</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card project-card-featured">
+          <img src="Images/project-map-simulator.webp" width="1200" height="675"
+            alt="Collaborative map simulator showing character tokens on a game map.">
+          <div class="project-content">
+            <p class="project-type">Real-time collaboration</p>
+            <h3>MapSimulator</h3>
+            <p>
+              A real-time collaborative map-building tool for remote Journeys in Middle-earth
+              sessions with interactive canvas state and shared player context.
+            </p>
+            <div class="project-notes">
+              <p><strong>Challenge:</strong> Keep visual map interactions synchronized across connected clients.</p>
+              <p><strong>Impact:</strong> Makes a physical board-game workflow usable for online play sessions.</p>
+            </div>
+            <ul class="tag-list" aria-label="MapSimulator technologies">
+              <li>Node.js</li>
+              <li>Socket.IO</li>
+              <li>Fabric.js</li>
+              <li>JavaScript</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/EliWoodard/MapSimulator" target="_blank" rel="noreferrer">GitHub</a>
+              <a href="https://mapsimulator.onrender.com/" target="_blank" rel="noreferrer">Live site</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="Images/project-player-simulator.webp" width="1200" height="675"
+            alt="Player simulator interface with item, creature, deck, and character panels.">
+          <div class="project-content">
+            <p class="project-type">Front-end simulator</p>
+            <h3>Player Simulator</h3>
+            <p>
+              A browser-based companion for Journeys in Middle-earth that emulates player state,
+              card panels, equipment, and play aids for online sessions.
+            </p>
+            <ul class="tag-list" aria-label="Player Simulator technologies">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>GitHub Pages</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/EliWoodard/JourneyToMiddleEarth" target="_blank" rel="noreferrer">GitHub</a>
+              <a href="https://eliwoodard.github.io/JourneyToMiddleEarth/" target="_blank" rel="noreferrer">Live site</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="Images/project-tasks.webp" width="1200" height="675"
+            alt="Tasks application showing due-today, due-tomorrow, and due-this-week sections.">
+          <div class="project-content">
+            <p class="project-type">Productivity tool</p>
+            <h3>Tasks</h3>
+            <p>
+              A modular task management system for college assignments, due dates, courses, and
+              project tracking in a focused web interface.
+            </p>
+            <ul class="tag-list" aria-label="Tasks technologies">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>GitHub Pages</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/EliWoodard/Tasks" target="_blank" rel="noreferrer">GitHub</a>
+              <a href="https://eliwoodard.github.io/Tasks/" target="_blank" rel="noreferrer">Live site</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="Images/project-database.webp" width="1200" height="675"
+            alt="Close-up code image representing the database-connected grading system project.">
+          <div class="project-content">
+            <p class="project-type">Database application</p>
+            <h3>Student Grading System</h3>
+            <p>
+              A Java and MySQL command-line application for managing classes, assignments, and
+              grades through a database-connected workflow.
+            </p>
+            <ul class="tag-list" aria-label="Student Grading System technologies">
+              <li>Java</li>
+              <li>MySQL</li>
+              <li>SQL</li>
+              <li>MySQL Workbench</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/EliWoodard/DatabaseConnection" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="section-header section-header-wide">
+        <div>
+          <p class="eyebrow">Skills and technologies</p>
+          <h2 id="skills-title">A practical stack for full-stack and systems-heavy work.</h2>
+        </div>
+      </div>
+
+      <div class="skills-grid">
+        <section class="skill-group" aria-labelledby="languages-title">
+          <h3 id="languages-title">Languages</h3>
+          <ul class="tag-list">
+            <li>C#</li>
+            <li>Java</li>
+            <li>C</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Perl</li>
+            <li>Bash</li>
+          </ul>
+        </section>
+        <section class="skill-group" aria-labelledby="frontend-title">
+          <h3 id="frontend-title">Front-end</h3>
+          <ul class="tag-list">
+            <li>Razor Pages</li>
+            <li>HTML5</li>
+            <li>CSS/Sass</li>
+            <li>React</li>
+            <li>Angular</li>
+            <li>WordPress</li>
+            <li>Fabric.js</li>
+            <li>Socket.IO</li>
+          </ul>
+        </section>
+        <section class="skill-group" aria-labelledby="backend-title">
+          <h3 id="backend-title">Back-end and databases</h3>
+          <ul class="tag-list">
+            <li>.NET</li>
+            <li>REST APIs</li>
+            <li>Node.js</li>
+            <li>MySQL</li>
+            <li>SQL Server</li>
+            <li>Apache Tomcat</li>
+          </ul>
+        </section>
+        <section class="skill-group" aria-labelledby="tools-title">
+          <h3 id="tools-title">Tools and workflow</h3>
+          <ul class="tag-list">
+            <li>Visual Studio</li>
+            <li>VS Code</li>
+            <li>Git</li>
+            <li>Bitbucket</li>
+            <li>SourceTree</li>
+            <li>Jira</li>
+            <li>Linux</li>
+            <li>SSMS</li>
+          </ul>
+        </section>
+      </div>
+    </section>
+
+    <section class="section compact-section" id="certifications" aria-labelledby="certifications-title">
+      <div class="section-header">
+        <p class="eyebrow">Certification</p>
+        <h2 id="certifications-title">Databricks Fundamentals on Azure</h2>
+      </div>
+      <div class="credential-row">
+        <p>
+          Certification coverage includes Databricks fundamentals on Azure, data engineering
+          concepts, and machine learning pipeline concepts.
+        </p>
+        <ul class="tag-list" aria-label="Certification topics">
+          <li>Databricks</li>
+          <li>Azure</li>
+          <li>Data engineering</li>
+          <li>ML pipelines</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="education" aria-labelledby="education-title">
+      <div class="section-header">
+        <p class="eyebrow">Education</p>
+        <h2 id="education-title">Boise State University</h2>
+      </div>
+
+      <div class="education-card">
+        <div>
+          <p class="degree">Bachelor of Science in Computer Science</p>
+          <p>GPA 3.9 | August 2021 - December 2024 | Boise, ID</p>
+        </div>
+      </div>
+
+      <div class="course-grid" aria-label="Course highlights">
+        <article>
+          <h3>Data Structures</h3>
+          <p>Built a Bioinformatics project using B-Trees, binary representations, caching, SQLite, GitHub, and Scrum practices.</p>
+        </article>
+        <article>
+          <h3>Programming Languages</h3>
+          <p>Studied Scheme, grammar, interpreters, and translation concepts across Java and C.</p>
+        </article>
+        <article>
+          <h3>Computational Theory</h3>
+          <p>Created and tested automata concepts, including DFA/NFA structures and a Turing Machine simulator.</p>
+        </article>
+        <article>
+          <h3>Algorithms</h3>
+          <p>Analyzed time and space complexity, divide-and-conquer strategies, recursion trees, and matrix multiplication.</p>
+        </article>
+        <article>
+          <h3>Electronics and Communication</h3>
+          <p>Used assembly and C to interface with a board, implement low-level routines, and build a board-driven music program.</p>
+        </article>
+        <article>
+          <h3>Computer Networks</h3>
+          <p>Studied network architectures, Fourier coefficients, Hamming codes, escaping/flags, bridges, and switched LAN concepts.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="section-header">
+        <h2 id="contact-title">Let's build something useful.</h2>
+      </div>
+
+      <p class="contact-copy">
+        I am open to software engineering conversations involving full-stack development,
+        internal tools, data systems, and infrastructure-adjacent product work.
+      </p>
+
+      <div class="contact-links" aria-label="Contact links">
+        <a href="mailto:eliwoodard136@gmail.com">eliwoodard136@gmail.com</a>
+        <a href="https://github.com/EliWoodard" target="_blank" rel="noreferrer">github.com/EliWoodard</a>
+        <a href="https://www.linkedin.com/in/elijah-woodard-a9609524a" target="_blank" rel="noreferrer">
+          LinkedIn
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Eli Woodard</p>
+    <p>Software Engineer | 2026</p>
+  </footer>
 </body>
 
 </html>

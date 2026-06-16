@@ -1,13 +1,18 @@
 {
-  "name": "portfolio",
-  "version": "1.0.0",
-  "description": "This repository contains the code for my portfolio website. As a Computer Science major and an aspiring Software Engineer, I've created this website to showcase my projects, skills, and experiences.",
-  "main": "index.js",
-  "devDependencies": {},
+  "name": "eli-woodard-portfolio",
+  "version": "2.0.0",
+  "description": "A modern software engineering portfolio to represent my abilities.",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "build:css": "sass sass/main.scss css/styles.css --style=compressed --no-source-map"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "portfolio",
+    "software-engineer",
+    "frontend",
+    "full-stack"
+  ],
+  "author": "Eli Woodard",
   "license": "ISC"
 }
